@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Branded Content Worth Watching · Reference Reel · Talex Media</title>
+<link rel="icon" type="image/png" sizes="192x192" href="https://static.wixstatic.com/media/3c6878_9a68ae0b3ff84e198fdd43fac493e294~mv2_d_1500_1500_s_2.png/v1/fill/w_192,h_192,lg_1,usm_0.66_1.00_0.01/3c6878_9a68ae0b3ff84e198fdd43fac493e294~mv2_d_1500_1500_s_2.png"/>
+<link rel="shortcut icon" href="https://static.wixstatic.com/media/3c6878_9a68ae0b3ff84e198fdd43fac493e294~mv2_d_1500_1500_s_2.png/v1/fill/w_32,h_32,lg_1,usm_0.66_1.00_0.01/3c6878_9a68ae0b3ff84e198fdd43fac493e294~mv2_d_1500_1500_s_2.png" type="image/png"/>
+<link rel="apple-touch-icon" href="https://static.wixstatic.com/media/3c6878_9a68ae0b3ff84e198fdd43fac493e294~mv2_d_1500_1500_s_2.png/v1/fill/w_180,h_180,lg_1,usm_0.66_1.00_0.01/3c6878_9a68ae0b3ff84e198fdd43fac493e294~mv2_d_1500_1500_s_2.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;500;600&family=EB+Garamond:ital,wght@0,400;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  --o:#E85A0C;
+  --o-dim:rgba(232,90,12,0.08);
+  --o-mid:rgba(232,90,12,0.18);
+  --o-border:rgba(232,90,12,0.28);
+  --bg:#F5F2EC;
+  --surface:#FFFFFF;
+  --surface2:#FAF8F5;
+  --border:#E2DDD6;
+  --border-strong:#C8C2BA;
+  --txt:#1A1816;
+  --txt2:#6B625A;
+  --txt3:#A89E96;
+  --green:#2D8C52;
+  --green-bg:#EDF7F2;
+  --green-border:#A8D9BC;
+  --red:#C0392B;
+  --red-bg:#FDF0EE;
+  --red-border:#E8BEBC;
+  --amber:#B07D10;
+  --amber-bg:#FDF7EC;
+  --amber-border:#E0C880;
+}
+
+html{background:var(--bg);color:var(--txt);font-family:'DM Sans',system-ui,sans-serif;font-size:15px;line-height:1.6}
+body{background:var(--bg);min-height:100vh}
+#wrap{max-width:700px;margin:0 auto;padding:0 1.25rem 5rem}
+
+.disp{font-family:'Bebas Neue',sans-serif;letter-spacing:0.04em;line-height:1}
+.head{font-family:'Oswald',sans-serif;font-weight:600;letter-spacing:0.02em;line-height:1.1}
+.lbl{font-family:'Oswald',sans-serif;font-weight:500;font-size:11px;letter-spacing:0.14em;text-transform:uppercase}
+.italic{font-family:'EB Garamond',Georgia,serif;font-style:italic}
+
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:1rem 0;border-bottom:1px solid var(--border)}
+.topbar-brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.topbar-logo{height:28px;width:auto}
+.topbar-name{font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:0.08em;color:var(--txt)}
+.topbar-right{display:flex;align-items:center;gap:12px}
+.topbar-cta{background:var(--o);color:#fff;font-family:'Oswald',sans-serif;font-weight:600;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;padding:8px 14px;border-radius:6px;text-decoration:none;transition:background 0.15s}
+.topbar-cta:hover{background:#c94d08}
+
+.hero{padding:3rem 0 2.5rem;border-bottom:2px solid var(--o)}
+.hero-step{display:flex;align-items:center;gap:10px;margin-bottom:1.25rem;flex-wrap:wrap}
+.step-pill{background:var(--o);color:#fff;font-family:'Oswald',sans-serif;font-weight:600;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;padding:3px 10px;border-radius:3px}
+.hero-eyebrow{font-family:'Oswald',sans-serif;font-size:12px;font-weight:400;letter-spacing:0.1em;text-transform:uppercase;color:var(--txt2)}
+.hero-title{font-size:clamp(40px,8vw,66px);color:var(--txt);margin-bottom:0.5rem}
+.hero-tagline{font-size:clamp(19px,3.5vw,26px);color:var(--o);margin-bottom:1rem}
+
+.stat-strip{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--border);border-radius:8px;background:var(--surface);overflow:hidden;margin:2rem 0}
+.stat-cell{padding:1rem;text-align:center;border-right:1px solid var(--border)}
+.stat-cell:last-child{border-right:none}
+.stat-num{font-family:'Bebas Neue',sans-serif;font-size:34px;letter-spacing:0.04em;color:var(--o)}
+.stat-label{font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--txt3);font-family:'Oswald',sans-serif;font-weight:400}
+
+.source-link{font-size:11px;color:var(--txt3);text-decoration:none;border-bottom:1px dotted var(--border-strong);transition:color 0.15s,border-color 0.15s;white-space:nowrap;margin-left:4px;font-family:'Oswald',sans-serif;letter-spacing:0.04em;position:relative;z-index:2}
+.source-link:hover{color:var(--o);border-bottom-color:var(--o)}
+.source-link::before{content:"↗ "}
+
+.callout{border-left:3px solid var(--o);padding:1rem 1.25rem;background:var(--surface);border-radius:0 8px 8px 0;margin:1.75rem 0}
+.callout p{font-family:'EB Garamond',Georgia,serif;font-style:italic;font-size:16px;color:var(--txt);line-height:1.75}
+.callout-attr{margin-top:0.6rem;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--o);font-family:'Oswald',sans-serif;font-weight:500}
+.callout-attr a{color:inherit;border-bottom:1px dotted var(--border-strong);text-decoration:none;transition:color 0.15s,border-color 0.15s}
+.callout-attr a:hover{color:var(--o);border-bottom-color:var(--o)}
+
+.section-intro{margin-bottom:1.25rem}
+.section-intro-row{display:flex;align-items:center;gap:8px;margin-bottom:0.4rem}
+.sec-pill-dark{background:var(--txt);color:#fff;font-family:'Oswald',sans-serif;font-weight:600;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;padding:3px 10px;border-radius:3px}
+.sec-pill-orange{background:var(--o);color:#fff;font-family:'Oswald',sans-serif;font-weight:600;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;padding:3px 10px;border-radius:3px}
+.section-eyebrow{font-family:'Oswald',sans-serif;font-size:11px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--txt3)}
+.section-title{font-family:'Oswald',sans-serif;font-weight:600;letter-spacing:0.02em;line-height:1.1;font-size:22px;color:var(--txt);margin-bottom:0.25rem}
+.section-subtitle{font-size:13px;color:var(--txt3);font-style:italic;font-family:'EB Garamond',Georgia,serif}
+
+.section-block{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:1.5rem;margin-bottom:1rem}
+.section-block p{font-size:14px;color:var(--txt2);line-height:1.8;margin-bottom:0.9rem}
+.section-block p:last-child{margin-bottom:0}
+.section-block strong{color:var(--txt);font-weight:500}
+.section-block em{font-family:'EB Garamond',Georgia,serif;font-style:italic;color:var(--txt)}
+.section-block a{color:var(--txt2);text-decoration:none;border-bottom:1px dotted var(--border-strong);transition:color 0.15s,border-color 0.15s}
+.section-block a:hover{color:var(--o);border-bottom-color:var(--o)}
+
+.rule{height:1px;background:var(--border);border:none;margin:1.5rem 0}
+.rule-orange{height:2px;background:var(--o);border:none;margin:2.5rem 0}
+
+.ideas-grid{display:flex;flex-direction:column;gap:0.75rem;margin-top:1rem}
+.idea-card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:1.1rem 1.3rem;display:flex;gap:1.1rem;align-items:flex-start}
+.idea-card-featured{background:rgba(232,90,12,0.05);border-color:var(--o)}
+.idea-num{flex-shrink:0;width:36px;height:36px;background:var(--o);color:#fff;font-family:'Bebas Neue',sans-serif;font-size:18px;display:flex;align-items:center;justify-content:center;border-radius:6px;margin-top:2px;letter-spacing:0.04em}
+.idea-body{flex:1;min-width:0}
+.idea-title{font-family:'Oswald',sans-serif;font-weight:600;font-size:15px;color:var(--txt);letter-spacing:0.02em;margin-bottom:6px;line-height:1.35}
+.idea-desc{font-size:13.5px;color:var(--txt2);line-height:1.7}
+.idea-desc em{font-family:'EB Garamond',Georgia,serif;font-style:italic;color:var(--txt)}
+.idea-tag{margin-top:10px;font-family:'Oswald',sans-serif;font-size:10px;letter-spacing:0.12em;color:var(--o);text-transform:uppercase;font-weight:600}
+.idea-tag a{color:inherit;text-decoration:none;border-bottom:1px dotted var(--o)}
+.idea-tag a:hover{border-bottom-style:solid}
+.idea-price{display:inline-block;margin:0 0 10px;padding:5px 11px;background:var(--o-dim);border:1px solid var(--o-border);border-radius:5px;font-family:'Oswald',sans-serif;font-size:11px;font-weight:500;letter-spacing:0.03em;color:var(--o);line-height:1.4}
+.idea-price strong{color:var(--o);font-weight:600}
+
+.reel-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:0.5rem}
+@media(max-width:560px){.reel-grid{grid-template-columns:1fr}}
+.reel-card{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:0.95rem 1.05rem;display:flex;flex-direction:column}
+.reel-eyebrow{font-family:'Oswald',sans-serif;font-size:9.5px;letter-spacing:0.16em;color:var(--o);text-transform:uppercase;font-weight:600;margin-bottom:0.4rem}
+.reel-title{font-family:'Oswald',sans-serif;font-weight:600;font-size:13.5px;color:var(--txt);letter-spacing:0.03em;margin-bottom:0.45rem;line-height:1.3}
+.reel-body{font-size:12.5px;color:var(--txt2);line-height:1.6;flex:1;margin-bottom:0.5rem}
+.reel-body em{font-family:'EB Garamond',Georgia,serif;font-style:italic;color:var(--txt)}
+.reel-body a{color:inherit;text-decoration:none;border-bottom:1px dotted var(--border-strong);transition:color 0.15s,border-color 0.15s}
+.reel-body a:hover{color:var(--o);border-bottom-color:var(--o)}
+
+.whats-inside{margin:0.5rem 0 1rem}
+.wi-heading{font-family:'Oswald',sans-serif;font-weight:600;font-size:18px;color:var(--txt);letter-spacing:0.06em;text-transform:uppercase;margin-bottom:1rem;text-align:center}
+.whats-inside-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+@media(max-width:560px){.whats-inside-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:380px){.whats-inside-grid{grid-template-columns:1fr}}
+.wi-card{display:block;background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:0.95rem 1rem;text-decoration:none;color:inherit;transition:border-color 0.15s,background 0.15s}
+.wi-card:hover{border-color:var(--o);background:#FCFAF7}
+.wi-num{font-family:'Bebas Neue',sans-serif;font-size:30px;color:var(--o);line-height:1;letter-spacing:0.04em;margin-bottom:8px}
+.wi-title{font-family:'Oswald',sans-serif;font-weight:600;font-size:13px;color:var(--txt);letter-spacing:0.04em;margin-bottom:5px;line-height:1.3;text-transform:uppercase}
+.wi-desc{font-size:12.5px;color:var(--txt2);line-height:1.55}
+
+.case-card{background:var(--txt);border-radius:12px;padding:1.5rem 1.5rem 1.75rem;margin-bottom:1rem;color:#fff;overflow:hidden}
+.cs-label{font-family:'Oswald',sans-serif;font-weight:500;font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--o);margin-bottom:0.5rem}
+.cs-name{font-family:'Bebas Neue',sans-serif;font-size:clamp(32px,5vw,42px);letter-spacing:0.03em;line-height:1;color:#fff;margin-bottom:1.1rem}
+.cs-stat-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:1.25rem}
+.cs-stat-cell{background:rgba(255,255,255,0.04);border-top:2px solid var(--o);padding:0.75rem 0.6rem 0.65rem}
+.cs-stat-num{font-family:'Bebas Neue',sans-serif;font-size:26px;letter-spacing:0.03em;color:var(--o);line-height:1.05}
+.cs-stat-label{font-size:10px;color:rgba(255,255,255,0.55);line-height:1.35;margin-top:2px}
+.cs-section{border-left:3px solid var(--o);padding:0.5rem 0 0.5rem 0.85rem;margin-bottom:0.9rem}
+.cs-section:last-child{margin-bottom:0}
+.cs-section-label{font-family:'Oswald',sans-serif;font-weight:600;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--o);margin-bottom:0.35rem}
+.cs-section-body{font-size:13px;color:rgba(255,255,255,0.78);line-height:1.7}
+.cs-footer-meta{margin-top:1.1rem;padding-top:0.9rem;border-top:1px solid rgba(255,255,255,0.1);font-size:11px;color:rgba(255,255,255,0.45);font-family:'Oswald',sans-serif;letter-spacing:0.06em;text-align:center}
+
+.cred-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:1.25rem}
+.cred-chip{padding:6px 12px;border:1px solid var(--o-border);background:var(--o-dim);border-radius:4px;font-family:'Oswald',sans-serif;font-weight:500;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--o)}
+
+.byline{display:flex;gap:14px;align-items:center;padding:1rem 1.25rem;background:var(--surface);border:1px solid var(--border);border-radius:10px;margin:1.5rem 0}
+.byline-avatar{width:60px;height:60px;border-radius:50%;overflow:hidden;background:var(--o-dim);border:2px solid var(--o);display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:22px;color:var(--o);flex-shrink:0}
+.byline-avatar img{width:100%;height:100%;object-fit:cover;display:block}
+.byline-body{flex:1;min-width:0}
+.byline-name{font-family:'Oswald',sans-serif;font-weight:600;font-size:14px;color:var(--txt);letter-spacing:0.03em}
+.byline-sub{font-size:12px;color:var(--txt2);line-height:1.5;margin-top:2px}
+
+.brand-mark-row{display:flex;align-items:center;gap:14px;margin-bottom:1.25rem;flex-wrap:wrap}
+.brand-logo-wrap{width:56px;height:56px;border-radius:10px;background:var(--surface);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;overflow:hidden;padding:6px;flex-shrink:0}
+.brand-logo-wrap img{max-width:100%;max-height:100%;object-fit:contain}
+.brand-logo-fallback{font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:0.04em;color:var(--o);line-height:1}
+
+.channel-grid{display:grid;grid-template-columns:1fr;gap:6px;margin-bottom:1rem}
+.channel-card{position:relative;background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:0.7rem 0.95rem;display:flex;gap:12px;align-items:flex-start;transition:border-color 0.15s,background 0.15s}
+.channel-card:hover{border-color:var(--o);background:#FCFAF7}
+.channel-card.channel-gap{border-style:dashed;background:var(--surface2)}
+.channel-link{position:absolute;inset:0;z-index:1;border-radius:8px}
+.channel-link:focus-visible{outline:2px solid var(--o);outline-offset:2px}
+.channel-icon{width:18px;height:18px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:3px}
+.channel-icon svg{width:18px;height:18px;display:block}
+.channel-icon.linkedin svg{fill:#0A66C2}
+.channel-icon.youtube svg{fill:#FF0000}
+.channel-icon.facebook svg{fill:#1877F2}
+.channel-icon.instagram svg{fill:#E4405F}
+.channel-icon.twitter svg{fill:#000}
+.channel-icon.tiktok svg{fill:#000}
+.channel-icon.spotify svg{fill:#1DB954}
+.channel-icon.applepodcasts svg{fill:#832BC1}
+.channel-icon.podcast svg{fill:#832BC1}
+.channel-icon.threads svg{fill:#000}
+.channel-icon.substack svg{fill:#FF6719}
+.channel-icon.blog svg{fill:var(--txt2)}
+.channel-icon.website svg{fill:var(--txt)}
+.channel-icon.books svg{fill:var(--o)}
+.channel-icon.vimeo svg{fill:#1AB7EA}
+.channel-handle a,.channel-snippet a{color:inherit;text-decoration:none;border-bottom:1px dotted var(--border-strong);transition:color 0.15s,border-color 0.15s}
+.channel-handle a:hover,.channel-snippet a:hover{color:var(--o);border-bottom-color:var(--o)}
+.channel-body{flex:1;min-width:0}
+.channel-head{display:flex;align-items:baseline;gap:8px;margin-bottom:2px;flex-wrap:wrap}
+.channel-name{font-family:'Oswald',sans-serif;font-weight:600;font-size:12px;color:var(--txt);letter-spacing:0.06em;text-transform:uppercase}
+.channel-handle{font-size:11px;color:var(--txt3);font-family:'Oswald',sans-serif;letter-spacing:0.04em}
+.channel-snippet{font-size:13px;color:var(--txt2);line-height:1.55}
+.channel-snippet em{font-family:'EB Garamond',Georgia,serif;font-style:italic;color:var(--txt)}
+.channel-snippet ul{list-style:none;padding:0;margin:0 0 6px 0}
+.channel-snippet ul li{position:relative;padding-left:14px;margin-bottom:3px}
+.channel-snippet ul li::before{content:"·";position:absolute;left:4px;top:-2px;color:var(--o);font-weight:700;font-size:16px;line-height:1}
+.channel-snippet ul li:last-child{margin-bottom:0}
+.channel-gap .channel-snippet ul li::before{color:var(--txt3)}
+
+.cta-block{background:var(--txt);border-radius:12px;padding:2.25rem 1.75rem;margin-top:2rem;text-align:center}
+.cta-eyebrow{font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(232,90,12,0.9);font-family:'Oswald',sans-serif;font-weight:500;margin-bottom:0.75rem}
+.cta-headline{font-size:clamp(28px,5vw,44px);color:#fff;margin-bottom:0.6rem}
+.cta-sub{font-size:13.5px;color:rgba(255,255,255,0.65);line-height:1.75;max-width:480px;margin:0 auto 1.75rem}
+.cta-primary{display:inline-block;background:var(--o);color:#fff;padding:14px 30px;border-radius:8px;font-family:'Oswald',sans-serif;font-weight:600;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;transition:background 0.15s,transform 0.1s}
+.cta-primary:hover{background:#c94d08}
+.cta-primary:active{transform:scale(0.98)}
+.cta-reply{margin-top:1.5rem;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,0.08);font-size:13px;color:rgba(255,255,255,0.55);font-family:'EB Garamond',Georgia,serif;font-style:italic;line-height:1.6}
+
+.faq-item{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:8px}
+.faq-q{font-family:'Oswald',sans-serif;font-weight:600;font-size:14px;color:var(--txt);margin-bottom:6px;letter-spacing:0.02em}
+.faq-a{font-size:13px;color:var(--txt2);line-height:1.7}
+
+.site-footer{margin-top:3rem;padding:1.5rem 0 1rem;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+.footer-brand{font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:0.08em;color:var(--txt2)}
+.footer-links{display:flex;gap:1.25rem;flex-wrap:wrap}
+.footer-links a{font-size:12px;color:var(--txt3);text-decoration:none;letter-spacing:0.06em;font-family:'Oswald',sans-serif;text-transform:uppercase}
+.footer-links a:hover{color:var(--o)}
+.footer-copy{font-size:11px;color:var(--txt3);width:100%}
+
+/* ── Our Work showcase (ported from the website Our Work page) ── */
+.work-intro{font-size:14px;color:var(--txt2);line-height:1.8;margin-bottom:1.5rem}
+.cs-video-embed{margin-top:1.25rem;position:relative;width:100%;aspect-ratio:16/9;background:#0F0E0D;border:1px solid rgba(255,255,255,0.08);border-radius:8px;overflow:hidden}
+.cs-video-embed iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;display:block}
+.tv-intro-quote{font-family:'EB Garamond',Georgia,serif;font-style:italic;font-size:16px;color:var(--txt);line-height:1.7;border-left:3px solid var(--o);padding:0.5rem 0 0.5rem 1rem;margin:0 0 1.5rem 0}
+.tv-network-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:1.5rem}
+.tv-network{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:1.4rem 0.75rem 1.1rem;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.65rem;min-height:104px}
+.tv-network-logo{height:38px;width:auto;max-width:88%;object-fit:contain;display:block}
+.tv-network-logo.bbc{height:34px}
+.tv-network-logo.nbc{height:22px;max-width:92%}
+.tv-network-logo.discovery{height:30px}
+.tv-network-sub{font-family:'Oswald',sans-serif;font-weight:400;font-size:9px;letter-spacing:0.16em;text-transform:uppercase;color:var(--txt3);line-height:1.2}
+.tv-feature-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0.85rem;margin-bottom:1.5rem}
+.tv-feature{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:1rem 1rem 1.1rem;display:flex;flex-direction:column}
+.tv-feature-show{font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:0.04em;line-height:1.05;color:var(--txt);margin-bottom:0.25rem}
+.tv-feature-sub{font-family:'Oswald',sans-serif;font-weight:400;font-size:10.5px;letter-spacing:0.05em;color:var(--txt2);margin-bottom:0.85rem;line-height:1.3}
+.tv-feature-video{position:relative;width:100%;aspect-ratio:3/2;background:var(--txt);border-radius:6px;overflow:hidden}
+.tv-feature-video iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;display:block}
+.tv-feature-role{margin-top:0.85rem;padding-top:0.65rem;border-top:1px solid var(--border);font-family:'Oswald',sans-serif;font-weight:600;font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--txt2)}
+.tv-credits-box{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:1.4rem 1.5rem 1.5rem}
+.tv-credits-eyebrow{font-family:'Oswald',sans-serif;font-weight:600;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--o);margin-bottom:1rem}
+.tv-credit-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;padding:0.85rem 0;border-top:1px solid var(--border)}
+.tv-credit-row:first-of-type{border-top:none;padding-top:0.4rem}
+.tv-credit-main{flex:1;min-width:200px}
+.tv-credit-title{font-family:'Oswald',sans-serif;font-weight:600;font-size:14px;letter-spacing:0.04em;text-transform:uppercase;color:var(--txt);line-height:1.2}
+.tv-credit-role{font-family:'Oswald',sans-serif;font-weight:400;font-size:11.5px;letter-spacing:0.03em;color:var(--txt2);margin-top:3px}
+.tv-credit-accolade{font-family:'Oswald',sans-serif;font-weight:600;font-size:9.5px;letter-spacing:0.12em;text-transform:uppercase;color:var(--o);background:var(--o-dim);border:1px solid var(--o-border);padding:4px 9px;border-radius:4px;white-space:nowrap;line-height:1.3}
+.tv-credits-imdb{margin-top:1.1rem;padding-top:1rem;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font-family:'Oswald',sans-serif;font-weight:500;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--txt2);transition:color 0.15s ease}
+.tv-credits-imdb:hover{color:var(--txt)}
+.tv-credits-imdb img{height:18px;width:auto;display:block;border-radius:2px}
+.tv-credits-imdb-arrow{color:var(--o);font-weight:600}
+.proj-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1.5rem 1.5rem 1.75rem;margin-bottom:1rem}
+.proj-header{display:flex;align-items:center;gap:14px;padding-bottom:1rem;border-bottom:1px solid var(--border);margin-bottom:1.1rem}
+.proj-logo-wrap{flex-shrink:0;width:84px;height:60px;background:var(--surface2);border:1px solid var(--border);border-radius:6px;display:flex;align-items:center;justify-content:center;padding:6px}
+.proj-logo{max-width:100%;max-height:100%;object-fit:contain;display:block}
+.proj-logo-fallback{font-family:'Oswald',sans-serif;font-weight:600;font-size:11px;letter-spacing:0.04em;color:var(--txt2);text-align:center;line-height:1.2}
+.proj-meta{flex:1;min-width:0}
+.proj-label{font-family:'Oswald',sans-serif;font-weight:500;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--o);margin-bottom:3px}
+.proj-name{font-family:'Bebas Neue',sans-serif;font-size:26px;letter-spacing:0.03em;line-height:1;color:var(--txt)}
+.proj-desc{font-size:13.5px;color:var(--txt2);line-height:1.75;padding:0 0 0.25rem 0}
+.proj-video-embed{margin-top:1.1rem;position:relative;width:100%;aspect-ratio:16/9;background:var(--txt);border-radius:8px;overflow:hidden}
+.proj-video-embed iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;display:block}
+@media(max-width:560px){
+  .tv-network-strip{grid-template-columns:1fr}
+  .tv-feature-grid{grid-template-columns:1fr}
+  .proj-header{flex-direction:column;align-items:flex-start;gap:10px}
+}
+
+@media print{
+  body{background:#fff}
+  .topbar-cta,.cta-primary{display:none}
+}
+</style>
+</head>
+<body>
+<div id="wrap">
+
+  <!-- LOCKED — topbar. Do not edit. -->
+  <nav class="topbar">
+    <a class="topbar-brand" href="https://www.talexmedia.com" target="_blank">
+      <img class="topbar-logo"
+        src="https://static.wixstatic.com/media/3c6878_456d81e9cdb84e6c8bb3260ebfcc0523~mv2.png"
+        alt="Talex Media"
+        onerror="this.style.display='none'; this.nextElementSibling.style.display='inline'"
+      />
+      <span class="topbar-name" style="display:none">TALEX MEDIA</span>
+    </a>
+    <div class="topbar-right">
+      <a class="topbar-cta" href="https://calendly.com/d/ct7b-xvd-c9x/intro-call" target="_blank" rel="noopener">Book a Call</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="section-intro-row" style="margin-bottom:1rem">
+      <span class="sec-pill-orange">Reference Reel</span>
+      <span class="section-eyebrow">Branded Content Examples</span>
+    </div>
+    <h1 class="disp hero-title">Content People<br/>Choose To Watch</h1>
+    <div class="italic hero-tagline">How other brands turned sponsored video into something worth pressing play on, and what that points to for the work we are talking about.</div>
+  </header>
+
+  <!-- Intro -->
+  <div class="section-block" style="margin-top:2rem">
+    <p>This is a reference reel, not a pitch. The idea on the table is simple to say and harder to do well. A brand funds a real project for a real person, and the film of that project becomes something people actually want to watch. Instead of showing one company doing our exact idea, this page collects the strongest parallel examples from across categories, so the format reads clearly no matter what gets built on screen.</p>
+    <p>The videos are embedded below. The <strong>five at the top</strong> are the ones we would put in a room first. The rest fill in the wider field. We picked these on craft first, meaning how good the content is and how naturally the brand sits inside it, rather than on chasing the biggest view count. Where a figure is soft or self-reported, it is flagged near the end so nothing gets presented as harder than it is.</p>
+  </div>
+
+  <hr class="rule-orange"/>
+
+  <!-- Section 01 -->
+  <div class="section-intro">
+    <div class="section-intro-row">
+      <span class="sec-pill-orange">01</span>
+      <span class="section-eyebrow">Start Here</span>
+    </div>
+    <h2 class="section-title">The Five To Look At First</h2>
+    <p class="section-subtitle">Different categories, different budgets, one shared idea: the brand paid for it, and people watched anyway.</p>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-meta">
+        <div class="proj-label">Brand + Creator · Interiors</div>
+        <div class="proj-name">OMG We're Coming Over</div>
+      </div>
+    </div>
+    <p class="proj-desc">The closest cousin to what we are describing. A designer and her team walk into one creator's real space, redo it top to bottom, and film the whole thing. The same engine runs every episode with a new person in the chair, and brand products get built into the room instead of read out in an ad break. Wayfair and Legrand have both run integrations through it. The format is the star, not any single episode, which is exactly what makes it repeatable.</p>
+    <div class="proj-video-embed">
+      <iframe src="https://www.youtube-nocookie.com/embed/vCvFmuERE_I" title="OMG We're Coming Over — Mr. Kate" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">Mr. Kate · <a href="https://www.youtube.com/playlist?list=PLxrcW2MAluZLJIUEXWEKVecuSUfqraW2x">Full playlist</a> · <a href="https://shortyawards.com/10th/omg-were-coming-over">Shorty Awards writeup</a> · <a href="https://www.legrand.us/ideas/video-gallery/adorne/mrkate-bedroom-makeover">Legrand integration</a></p>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-meta">
+        <div class="proj-label">Brand-Owned Series · Home &amp; Outdoor</div>
+        <div class="proj-name">The Weekender</div>
+      </div>
+    </div>
+    <p class="proj-desc">A host helps one homeowner finish a full space in a single weekend. It launched in 2016 with ten episodes across Apple TV, Fire TV, Roku and YouTube, and it has run for at least seven seasons since, including the backyard episode here. This is the durability argument. A retailer built one format and kept it alive for years, which is the case against treating video as a one-and-done spend.</p>
+    <div class="proj-video-embed">
+      <iframe src="https://www.youtube-nocookie.com/embed/xDoSLyt_Cxg" title="The Weekender: The Epic Backyard — Lowe's" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">Lowe's · host Monica Mangin · <a href="https://corporate.lowes.com/newsroom/press-releases/lowes-premieres-new-original-series-weekender-07-14-16">Launch release</a></p>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-meta">
+        <div class="proj-label">Brand-Owned Series · Furniture</div>
+        <div class="proj-name">IKEA Home Tour</div>
+      </div>
+    </div>
+    <p class="proj-desc">Five actual IKEA employees travel the country solving real families' design problems. The first season alone was 28 videos across 13 makeovers. Because the hosts are staff rather than celebrities, the whole thing feels attainable instead of aspirational. It is also the example with a sales figure attached. IKEA reported store sales rose an average of 4.1 percent during the weeks the series ran, alongside 5.6 million video views. Present that as IKEA's own reported result, since it comes from their award entry.</p>
+    <div class="proj-video-embed">
+      <iframe src="https://www.youtube-nocookie.com/embed/iBAutIOMhyc" title="IKEA Home Tour Episode 101" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">IKEA · <a href="https://shortyawards.com/7th/ikea-home-tour">Full case study and figures</a></p>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-meta">
+        <div class="proj-label">Brand-Owned Series · Outdoor</div>
+        <div class="proj-name">YETI Presents</div>
+      </div>
+    </div>
+    <p class="proj-desc">Short documentaries built around the people YETI's gear serves, released free and running for close to a decade. The discipline is the lesson. Their creative lead has said the brief from leadership was, in effect, do not show a cooler and do not talk about coolers. The product earns its place by being useful in the story rather than pointed at. Use this to set the quality bar in the room, not as the template for the build.</p>
+    <div class="proj-video-embed">
+      <iframe src="https://www.youtube-nocookie.com/embed/OmrufRLGdAk" title="YETI Presents: A Thousand Casts" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">YETI · <a href="https://www.youtube.com/playlist?list=PLT6IyUkzp1o2G2YHBFRsUDP_NLg_jh3QV">Film library</a> · <a href="https://www.filmsupply.com/articles/yeti-scott-ballew-authentic-brand-films/">Interview with YETI's film lead</a></p>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-meta">
+        <div class="proj-label">Brand + Creator · DIY · TikTok</div>
+        <div class="proj-name">To DIY For</div>
+      </div>
+    </div>
+    <p class="proj-desc">A competition where DIY creators took on refurb challenges using Behr products, with weekly winners decided by votes in the comments. It lived on TikTok, so it is linked rather than embedded here. This is the example that answers whether the format moves numbers, and it does it for a <strong>paint company</strong>, not a lifestyle brand. Reported results: 108 million video views, 120 million impressions, and a 66 percent jump in followers that made Behr the most-followed major paint brand on TikTok.</p>
+    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">Behr Paint · <a href="https://shortyawards.com/15th/behr-paint-company-to-diy-for-campaign">Case study and results</a> · <a href="https://www.marketingdive.com/news/behr-paint-diy-marketing-millennial-homeowners-tiktok/642499/">Marketing Dive</a></p>
+  </div>
+
+  <hr class="rule-orange"/>
+
+  <!-- Section 02 -->
+  <div class="section-intro">
+    <div class="section-intro-row">
+      <span class="sec-pill-dark">02</span>
+      <span class="section-eyebrow">More To Draw From</span>
+    </div>
+    <h2 class="section-title">The Wider Field</h2>
+    <p class="section-subtitle">Ten more, split between brands funding a creator's real project and brands producing their own entertainment.</p>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-meta">
+        <div class="proj-label">Brand-Owned Series · Hospitality</div>
+        <div class="proj-name">Two Bellmen</div>
+      </div>
+    </div>
+    <p class="proj-desc">Scripted short films shot in and around Marriott properties, made by the brand's own content studio. The first film reportedly passed 5.1 million views and the first two together more than 12 million. Proof that a brand can make something people watch for the story, with the venue as the co-star.</p>
+    <div class="proj-video-embed">
+      <iframe src="https://www.youtube-nocookie.com/embed/ZOgteFrOKt8" title="Two Bellmen — Marriott" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">Marriott · <a href="https://www.hollywoodreporter.com/news/general-news/marriott-content-studio-greenlights-3rd-804632/">Hollywood Reporter</a></p>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-meta">
+        <div class="proj-label">Brand-Owned Series · Apparel</div>
+        <div class="proj-name">Living Off the Wall</div>
+      </div>
+    </div>
+    <p class="proj-desc">Documentary shorts about skaters, artists and other people living outside the mainstream. The craft note worth stealing: nobody in the films talks about shoes, and subjects wore their own. The brand shows up as a point of view rather than a product placement.</p>
+    <div class="proj-video-embed">
+      <iframe src="https://www.youtube-nocookie.com/embed/s5inJUHviG0" title="Living Off the Wall — Vans" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">Vans · <a href="https://www.adweek.com/creativity/vans-celebrates-its-fans-and-their-lifestyles-incredible-documentary-series-155787/">Adweek feature</a></p>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-meta">
+        <div class="proj-label">Brand-Owned Series · Beauty</div>
+        <div class="proj-name">Cosmetic Criminals / Vanity Vandals</div>
+      </div>
+    </div>
+    <p class="proj-desc">A recurring scripted comedy universe that spoofs true-crime documentaries. The 2026 chapter, Vanity Vandals, is a ten-minute film that reportedly hit close to three million views within days of launch. Shows a mass-market brand building a returning entertainment format instead of one-off ads.</p>
+    <div class="proj-video-embed">
+      <iframe src="https://www.youtube-nocookie.com/embed/86ajudMFcPk" title="Vanity Vandals — e.l.f. Cosmetics" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">e.l.f. Cosmetics · <a href="https://investor.elfbeauty.com/stock-and-financial/press-releases/landing-news/2026/03-31-2026-050113142">Announcement</a> · <a href="https://www.thedrum.com/awards-case-study/how-elf-cosmetics-courtroom-drama-gave-us-new-way-help-us-judge-real-beauty">The Drum</a></p>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-meta">
+        <div class="proj-label">Brand + Creator · DIY · running now</div>
+        <div class="proj-name">Behr x LaurDIY Dining Room</div>
+      </div>
+    </div>
+    <p class="proj-desc">A live, multi-part sponsored makeover of the creator's own dining room built around a specific Behr color. This is the closest thing to the exact POLYWOOD mechanic happening right now: a brand funds one creator's real space, filmed as an ongoing series. <a href="https://www.tiktok.com/@laurdiy/video/7576382762345581838">Watch on TikTok</a>.</p>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-meta">
+        <div class="proj-label">Brand + Creator · Holiday</div>
+        <div class="proj-name">Merry &amp; Bright</div>
+      </div>
+    </div>
+    <p class="proj-desc">Three ten-minute holiday makeover episodes, hosted by Jordin Sparks, with QR codes on screen that sent viewers straight to a shop-the-look page. A clean example of closing the loop from entertainment to cart, which is the question a retailer always asks. <a href="https://markets.financialcontent.com/pennwell.pennenergy/article/bizwire-2023-11-1-vizios-home-screen-creates-a-portal-to-exclusive-holiday-themed-shoppable-content-series">The Home Depot, 2023</a>.</p>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-meta">
+        <div class="proj-label">Brand + Creator · Kitchen</div>
+        <div class="proj-name">IKEA Kitchen Showroom Showdown</div>
+      </div>
+    </div>
+    <p class="proj-desc">A five-part design competition where two known hosts each build a dream kitchen under the same rules. A current, modest-scale example of a retailer hiring recognizable talent and a real production company to make a watchable series. <a href="https://www.ikea.com/ca/en/campaigns/kitchen-showroom-showdown-pub9c582730/">IKEA Canada, 2026</a>.</p>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-meta">
+        <div class="proj-label">Brand + Creator · Furniture</div>
+        <div class="proj-name">Overhaul</div>
+      </div>
+    </div>
+    <p class="proj-desc">An early shoppable makeover series where the first episode redid a YouTuber's space and let viewers buy the furniture through pop-up cards. Dated now, but the earliest clean version of brand plus creator plus buy-what-you-see. <a href="https://www.homeaccentstoday.com/lamps/wayfair-launches-shoppable-youtube-series/">Wayfair, 2015</a>.</p>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-meta">
+        <div class="proj-label">Brand + Creator · Paint</div>
+        <div class="proj-name">DIY Influencer Program</div>
+      </div>
+    </div>
+    <p class="proj-desc">Eleven designers making over spaces around the annual Color of the Year, plus a charitable community strand. Included as a contrast: this is what the creator-project idea looks like as a loose roster, without a single format holding it together. <a href="https://www.sherwin-williams.com/homeowners/inspiration/diy-influencers">Sherwin-Williams</a>.</p>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-meta">
+        <div class="proj-label">Brand + Creator · Automotive</div>
+        <div class="proj-name">Roadkill</div>
+      </div>
+    </div>
+    <p class="proj-desc">Two former magazine editors buy junk cars and revive them on camera. Dodge came on as sponsor in 2015, and a real-world festival, Roadkill Nights, spun out of it. The automotive proof that a brand can back an existing enthusiast format instead of building one from scratch. <a href="https://en.wikipedia.org/wiki/Roadkill_(web_series)">Sponsored by Dodge, 2012 to 2018</a>.</p>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-meta">
+        <div class="proj-label">Brand-Owned Series · Small Business</div>
+        <div class="proj-name">Mailchimp Presents</div>
+      </div>
+    </div>
+    <p class="proj-desc">A whole slate of original films, series and podcasts for small-business owners, made with partners like Vice and the Queer Eye production company. This is the far end of the spectrum, a brand becoming a studio. Useful as a horizon, not a starting point. <a href="https://variety.com/2019/digital/news/mailchimp-presents-entertainment-studio-1203235773/">Mailchimp, 2019</a>.</p>
+  </div>
+
+  <hr class="rule-orange"/>
+
+  <!-- Section 03 -->
+  <div class="section-intro">
+    <div class="section-intro-row">
+      <span class="sec-pill-dark">03</span>
+      <span class="section-eyebrow">Read The Fine Print</span>
+    </div>
+    <h2 class="section-title">What To Say Carefully</h2>
+    <p class="section-subtitle">A few figures here are softer than they look. Flagging them so nothing gets presented as harder than it is.</p>
+  </div>
+
+  <div class="section-block">
+    <p><strong>IKEA's 4.1 percent store-sales lift</strong> is a self-reported figure from IKEA's own award entry. It is the strongest number here and also the one a skeptical exec is most likely to poke at, so present it as IKEA's reported result rather than an independent fact.</p>
+    <p><strong>Behr's run length</strong> is described as four weeks in one source and six in another. The view and follower figures are consistent across both, so lead with those.</p>
+    <p><strong>The e.l.f. Vanity Vandals view count</strong> comes from launch coverage, so treat it as an early, brand-adjacent number. The purchase-intent and favorability lifts from the earlier courtroom campaign are the steadier stats to cite.</p>
+    <p><strong>Marriott's view totals and Roadkill's per-episode numbers</strong> come from press and secondary write-ups rather than the brands directly. Fine to mention, worth softening the language.</p>
+    <p><strong>One finding worth naming out loud:</strong> there is no strong example of an automotive or apparel brand funding a creator's own transformation project. Those categories lean toward sponsoring formats that already exist. That gap is part of why the POLYWOOD idea has room to be distinctive.</p>
+  </div>
+
+  <hr class="rule-orange"/>
+
+  <!-- Concept -->
+  <div class="case-card">
+    <div class="cs-label">Where This Points</div>
+    <div class="cs-name">The Same Engine, Pointed At The Backyard</div>
+    <div class="cs-section">
+      <div class="cs-section-label">The move they all share</div>
+      <div class="cs-section-body">A brand pays for a real transformation, and the film of it becomes something people choose to watch. That is the whole pattern, repeated across home, auto, beauty and apparel.</div>
+    </div>
+    <div class="cs-section">
+      <div class="cs-section-label">The POLYWOOD version</div>
+      <div class="cs-section-body">An influencer agency finds a creator who wants to redo their yard. POLYWOOD brings in a designer to design it. We film the process, start to finish.</div>
+    </div>
+    <div class="cs-section">
+      <div class="cs-section-label">The shape</div>
+      <div class="cs-section-body">Individual videos, not a serialized show. The same concept runs again with a new creator each time, the way Mr. Kate runs a room and Lowe's runs a weekend. The furniture is not pointed at. It earns its place by being what the space is built around.</div>
+    </div>
+    <div class="cs-footer-meta">Good content that happens to sell furniture, rather than a furniture ad that hopes to entertain.</div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <span class="footer-brand">Talex Media</span>
+    <div class="footer-links">
+      <a href="https://www.talexmedia.com" target="_blank">talexmedia.com</a>
+      <a href="mailto:solutions@talexmedia.com">solutions@talexmedia.com</a>
+    </div>
+    <div class="footer-copy">© 2026 Talex Media LLC · Branded content reference reel · Prepared for internal review · July 2026</div>
+  </footer>
+
+</div>
+</body>
+</html>
