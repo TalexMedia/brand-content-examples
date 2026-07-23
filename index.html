@@ -265,6 +265,11 @@ body{background:var(--bg);min-height:100vh}
 .bullets li::before{content:"";position:absolute;left:2px;top:0.62em;width:5px;height:5px;border-radius:50%;background:var(--o)}
 .bullets li strong{color:var(--txt);font-weight:500}
 .bullets li em{font-family:'EB Garamond',Georgia,serif;font-style:italic;color:var(--txt)}
+.tt-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:1.1rem}
+.tt-embed{width:100%;max-width:325px;height:740px;border-radius:8px;overflow:hidden;background:var(--txt);flex:0 1 325px}
+.tt-embed iframe{width:100%;height:100%;border:0;display:block}
+.tt-note{font-family:'Oswald',sans-serif;font-weight:400;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--txt3);margin-top:0.6rem}
+@media(max-width:560px){.tt-embed{height:640px}}
 @media(max-width:560px){
   .tv-network-strip{grid-template-columns:1fr}
   .tv-feature-grid{grid-template-columns:1fr}
@@ -302,7 +307,7 @@ body{background:var(--bg);min-height:100vh}
       <span class="section-eyebrow">Branded Content Examples</span>
     </div>
     <h1 class="disp hero-title">Content People<br/>Choose To Watch</h1>
-    <div class="italic hero-tagline">Fifteen examples of video that a brand paid for and people still chose to watch.</div>
+    <div class="italic hero-tagline">Twenty-two examples of video that a brand paid for and people still chose to watch.</div>
   </header>
 
   <!-- Section 01 -->
@@ -311,25 +316,42 @@ body{background:var(--bg);min-height:100vh}
       <span class="sec-pill-orange">01</span>
       <span class="section-eyebrow">Start Here</span>
     </div>
-    <h2 class="section-title">The Five To Look At First</h2>
-    <p class="section-subtitle">Different categories and budgets. These five are the best made of the group.</p>
+    <h2 class="section-title">The Six To Look At First</h2>
+    <p class="section-subtitle">Different categories and budgets. The first two are the closest in shape to the outdoor idea.</p>
   </div>
 
   <div class="proj-card">
     <div class="proj-header">
       <div class="proj-meta">
-        <div class="proj-label">Brand + Creator · Interiors</div>
-        <div class="proj-name">OMG We're Coming Over</div>
+        <div class="proj-label">Brand + Creator · Garden &amp; Outdoor</div>
+        <div class="proj-name">From Scratch: The Epic Gardening Way</div>
       </div>
     </div>
     <ul class="bullets">
-      <li>A designer and her team redo one creator's real room, top to bottom, filmed start to finish.</li>
-      <li>A different creator features in each episode. Brands including Wayfair and Legrand have supplied the products used in the makeovers.</li>
+      <li>The Home Depot and the gardening creator Kevin Espiritu turn a real property into a working garden and outdoor-living space over the course of the series.</li>
+      <li>Each episode takes on a separate stage of the build, including pathways, fencing, a greenhouse, an outdoor kitchen and the backyard pergola shown here.</li>
     </ul>
     <div class="proj-video-embed">
-      <iframe src="https://www.youtube-nocookie.com/embed/vCvFmuERE_I" title="OMG We're Coming Over · Mr. Kate" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe src="https://www.youtube-nocookie.com/embed/ld4P-3i3MPc" title="From Scratch with Epic Gardening: Backyard Pergola" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">Mr. Kate · <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLxrcW2MAluZLJIUEXWEKVecuSUfqraW2x">Full playlist</a> · <a target="_blank" rel="noopener" href="https://shortyawards.com/10th/omg-were-coming-over">Shorty Awards writeup</a> · <a target="_blank" rel="noopener" href="https://www.legrand.us/ideas/video-gallery/adorne/mrkate-bedroom-makeover">Legrand integration</a></p>
+    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">The Home Depot x Epic Gardening · <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PL4wNSwy14b1CLBw7uqly-2VsyIHWUJkDK">Full playlist</a></p>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-meta">
+        <div class="proj-label">Brand + Creator · Workspaces</div>
+        <div class="proj-name">Make My Space Work</div>
+      </div>
+    </div>
+    <ul class="bullets">
+      <li>The designer Alexandra Gater rebuilds the workspace of a real entrepreneur in each episode, working to a budget and around how that person actually runs their business.</li>
+      <li>Shopify Studios makes the series, and every episode follows the same path from what is not working, through the design plan and the build, to the reveal.</li>
+    </ul>
+    <div class="proj-video-embed">
+      <iframe src="https://www.youtube-nocookie.com/embed/_6IRXBtSolo" title="Make My Space Work: Pink Office Makeover" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">Shopify x Alexandra Gater · <a target="_blank" rel="noopener" href="https://www.youtube.com/c/makemyspacework/featured">Series channel</a></p>
   </div>
 
   <div class="proj-card">
@@ -341,12 +363,29 @@ body{background:var(--bg);min-height:100vh}
     </div>
     <ul class="bullets">
       <li>A host helps one homeowner finish a room or a yard over a single weekend.</li>
-      <li>Started in 2016 and has run for at least seven seasons, across Apple TV, Fire TV, Roku and YouTube. The episode here is a backyard build.</li>
+      <li>The series started in 2016 and has run for at least eight seasons across Apple TV, Fire TV, Roku and YouTube. The episode here is a backyard makeover from season eight.</li>
     </ul>
     <div class="proj-video-embed">
-      <iframe src="https://www.youtube-nocookie.com/embed/xDoSLyt_Cxg" title="The Weekender: The Epic Backyard · Lowe's" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe src="https://www.youtube-nocookie.com/embed/TOj6NJNusAw" title="The Weekender: The Game Changer Backyard" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">Lowe's · host Monica Mangin · <a target="_blank" rel="noopener" href="https://corporate.lowes.com/newsroom/press-releases/lowes-premieres-new-original-series-weekender-07-14-16">Launch release</a></p>
+    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">Lowe's · host Monica Mangin · <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLXRbmDDj3R96F9usLRnOqhfnuhpPZoV_j">Season 8 playlist</a></p>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-meta">
+        <div class="proj-label">Brand + Creator · Interiors</div>
+        <div class="proj-name">OMG We're Coming Over</div>
+      </div>
+    </div>
+    <ul class="bullets">
+      <li>A designer and her team redo one creator's real room from top to bottom, filmed from the first walkthrough to the reveal.</li>
+      <li>A different creator features in each episode, and brands including Wayfair and Legrand have supplied the products used in the makeovers.</li>
+    </ul>
+    <div class="proj-video-embed">
+      <iframe src="https://www.youtube-nocookie.com/embed/vCvFmuERE_I" title="OMG We're Coming Over · Mr. Kate" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">Mr. Kate · <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLxrcW2MAluZLJIUEXWEKVecuSUfqraW2x">Full playlist</a> · <a target="_blank" rel="noopener" href="https://shortyawards.com/10th/omg-were-coming-over">Shorty Awards writeup</a></p>
   </div>
 
   <div class="proj-card">
@@ -357,8 +396,8 @@ body{background:var(--bg);min-height:100vh}
       </div>
     </div>
     <ul class="bullets">
-      <li>Five IKEA employees travel the country and make over rooms in real families' homes.</li>
-      <li>The first season was 28 videos across 13 makeovers. IKEA reported 5.6 million views and store sales up an average of 4.1 percent during the weeks it ran.</li>
+      <li>Five IKEA employees travel the country and make over rooms in real families' homes, working to whatever problem that particular household has.</li>
+      <li>The first season ran to 28 videos across 13 makeovers. IKEA's own figures put it at 5.6 million views, with store sales up an average of 4.1 percent during the weeks it aired.</li>
     </ul>
     <div class="proj-video-embed">
       <iframe src="https://www.youtube-nocookie.com/embed/iBAutIOMhyc" title="IKEA Home Tour Episode 101" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -369,37 +408,23 @@ body{background:var(--bg);min-height:100vh}
   <div class="proj-card">
     <div class="proj-header">
       <div class="proj-meta">
-        <div class="proj-label">Brand-Owned Series · Outdoor</div>
-        <div class="proj-name">YETI Presents</div>
-      </div>
-    </div>
-    <ul class="bullets">
-      <li>Short documentary films about the kind of people who use YETI gear: anglers, hunters, cooks, surfers.</li>
-      <li>The films tell personal stories and barely mention the product. They have been released free on YouTube for close to a decade.</li>
-    </ul>
-    <div class="proj-video-embed">
-      <iframe src="https://www.youtube-nocookie.com/embed/OmrufRLGdAk" title="YETI Presents: A Thousand Casts" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">YETI · <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLT6IyUkzp1o2G2YHBFRsUDP_NLg_jh3QV">Film library</a> · <a target="_blank" rel="noopener" href="https://www.filmsupply.com/articles/yeti-scott-ballew-authentic-brand-films/">Interview with YETI's film lead</a></p>
-  </div>
-
-  <div class="proj-card">
-    <div class="proj-header">
-      <div class="proj-meta">
         <div class="proj-label">Brand + Creator · DIY · TikTok</div>
         <div class="proj-name">To DIY For</div>
       </div>
     </div>
     <ul class="bullets">
-      <li>A DIY competition series on TikTok where creators take on refurbishing challenges using Behr paint.</li>
-      <li>Weekly winners were decided by votes in the comments. It has run for at least three seasons, with a $20,000 prize in season two.</li>
-      <li>Behr reported 108 million video views, 120 million impressions and a 66 percent rise in followers. The video here is the agency's case film on the campaign.</li>
+      <li>A DIY competition on TikTok in which creators take on refurbishing challenges using Behr paint, with the weekly winner decided by votes in the comments.</li>
+      <li>It has run for at least three seasons, with a $20,000 prize in season two. By Behr's count the campaign drew 108 million video views and lifted followers by 66 percent.</li>
     </ul>
     <div class="proj-video-embed">
       <iframe src="https://www.youtube-nocookie.com/embed/Nh9skd_pWGU" title="BEHR: To DIY For Case Film" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">Behr Paint · <a target="_blank" rel="noopener" href="https://shortyawards.com/15th/behr-paint-company-to-diy-for-campaign">Case study and results</a> · <a target="_blank" rel="noopener" href="https://www.marketingdive.com/news/behr-paint-diy-marketing-millennial-homeowners-tiktok/642499/">Marketing Dive</a></p>
-    <p class="proj-desc" style="margin-top:0.4rem;font-size:12.5px;color:var(--txt3)">Watch on TikTok · <a target="_blank" rel="noopener" href="https://www.tiktok.com/@behr">@behr profile</a> · <a target="_blank" rel="noopener" href="https://www.tiktok.com/@behr/video/7395240867407170858">Season 3 episodes</a> · <a target="_blank" rel="noopener" href="https://www.tiktok.com/@behr/video/7243856543966448942">Season 2 Challenge 1</a></p>
+    <div class="tt-note">The series itself, on TikTok</div>
+    <div class="tt-row">
+      <div class="tt-embed"><iframe src="https://www.tiktok.com/embed/v2/7395240867407170858" title="Behr To DIY For Season 3" loading="lazy" allow="encrypted-media" allowfullscreen></iframe></div>
+      <div class="tt-embed"><iframe src="https://www.tiktok.com/embed/v2/7243856543966448942" title="Behr To DIY For Season 2 Challenge 1" loading="lazy" allow="encrypted-media" allowfullscreen></iframe></div>
+    </div>
+    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">Behr Paint · <a target="_blank" rel="noopener" href="https://shortyawards.com/15th/behr-paint-company-to-diy-for-campaign">Case study and results</a> · <a target="_blank" rel="noopener" href="https://www.tiktok.com/@behr">@behr on TikTok</a></p>
   </div>
 
   <hr class="rule-orange"/>
@@ -411,7 +436,143 @@ body{background:var(--bg);min-height:100vh}
       <span class="section-eyebrow">More To Draw From</span>
     </div>
     <h2 class="section-title">The Wider Field</h2>
-    <p class="section-subtitle">Ten more, split between brands funding a creator's project and brands making their own entertainment.</p>
+    <p class="section-subtitle">Sixteen more, across home, cars, beauty, clothing and software.</p>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-meta">
+        <div class="proj-label">Brand + Creator · Automotive</div>
+        <div class="proj-name">Between 2 Rides</div>
+      </div>
+    </div>
+    <ul class="bullets">
+      <li>Each episode puts two versions of the same car side by side, one left stock and one modified with parts sourced through eBay, then tests them against each other.</li>
+      <li>Season two ran to five episodes with seven builder-creators. eBay counted 22.9 million views, 222,000 new subscribers and more than a million hours watched, and its channel went from sixth to first among auto-parts channels.</li>
+    </ul>
+    <div class="proj-video-embed">
+      <iframe src="https://www.youtube-nocookie.com/embed/jEe7yZQlhvM" title="Between 2 Rides · eBay Motors" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">eBay Motors, agency The Many · <a target="_blank" rel="noopener" href="https://shortyawards.com/16th/between-2-rides">Case study and results</a></p>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-meta">
+        <div class="proj-label">Brand + Creator · DIY</div>
+        <div class="proj-name">How to Undo</div>
+      </div>
+    </div>
+    <ul class="bullets">
+      <li>The host takes common DIY mistakes and shows how to reverse them, from damaged carpet and badly laid tile to a boring front door.</li>
+      <li>Two seasons and twelve episodes, all shot in eleven business days. Home Depot reported more than a million views, and it took a bronze honor at the Shorty Awards.</li>
+    </ul>
+    <div class="proj-video-embed">
+      <iframe src="https://www.youtube-nocookie.com/embed/DcbidPwNBNI" title="How to Undo · The Home Depot" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">The Home Depot x Mike Montgomery, produced by Trade School · <a target="_blank" rel="noopener" href="https://shortyawards.com/15th/how-to-undo">Case study</a></p>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-meta">
+        <div class="proj-label">Brand-Owned Series · Interiors</div>
+        <div class="proj-name">Design of the Times</div>
+      </div>
+    </div>
+    <ul class="bullets">
+      <li>The designer Maurice Harris updates rooms that are stuck in a particular decade while keeping some of the original character in place.</li>
+      <li>There are five episodes, each one built around a recognizable period rather than a general refresh.</li>
+    </ul>
+    <div class="proj-video-embed">
+      <iframe src="https://www.youtube-nocookie.com/embed/mADjl60gkDM" title="Design of the Times · Lowe's" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">Lowe's x Maurice Harris · <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLXRbmDDj3R96bMlKgtQSv_Z_1DoR32r7N">Full playlist</a></p>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-meta">
+        <div class="proj-label">Brand-Owned Series · Beauty</div>
+        <div class="proj-name">Make Up Over Makeup</div>
+      </div>
+    </div>
+    <ul class="bullets">
+      <li>Two people with unresolved tension between them do each other's makeup while talking through the relationship.</li>
+      <li>There are two episodes. The first reached 7.6 million views and hit number 16 on YouTube's global trending chart, with no paid media behind it.</li>
+    </ul>
+    <div class="proj-video-embed">
+      <iframe src="https://www.youtube-nocookie.com/embed/6JJA4wzklxE" title="Make Up Over Makeup · e.l.f. Cosmetics" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">e.l.f. Cosmetics · <a target="_blank" rel="noopener" href="https://shortyawards.com/16th/make-up-over-makeup">Case study and results</a></p>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-meta">
+        <div class="proj-label">Brand + Creator · Design · TikTok</div>
+        <div class="proj-name">Redesigning Signs</div>
+      </div>
+    </div>
+    <ul class="bullets">
+      <li>Max Kolomatsky hunts down badly made signs and posters around New York and rebuilds them properly using Adobe tools.</li>
+      <li>Four videos, made with kvell collective. On TikTok they pulled 6.3 million organic views at an 11 percent engagement rate, and the series won Branded Series at the 16th Shorty Awards.</li>
+    </ul>
+    <div class="tt-row">
+      <div class="tt-embed"><iframe src="https://www.tiktok.com/embed/v2/7247200817021750570" title="Adobe Redesigning Signs" loading="lazy" allow="encrypted-media" allowfullscreen></iframe></div>
+    </div>
+    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">Adobe x Max Kolomatsky · <a target="_blank" rel="noopener" href="https://shortyawards.com/16th/redesign-series">Case study and results</a></p>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-meta">
+        <div class="proj-label">Brand + Creator · Kitchen</div>
+        <div class="proj-name">IKEA Kitchen Showroom Showdown</div>
+      </div>
+    </div>
+    <ul class="bullets">
+      <li>A competition in which two hosts each design and build their own kitchen under the same set of rules.</li>
+      <li>IKEA Canada made it with the McGillivray Group, running five episodes plus extra social content, and launched it in February 2026.</li>
+    </ul>
+    <div class="proj-video-embed">
+      <iframe src="https://www.youtube-nocookie.com/embed/GU4rQi3LLJY" title="IKEA Kitchen Showroom Showdown: The Big Reveal" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">IKEA Canada, 2026 · <a target="_blank" rel="noopener" href="https://www.ikea.com/ca/en/campaigns/kitchen-showroom-showdown-pub9c582730/">IKEA campaign page</a></p>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-meta">
+        <div class="proj-label">Brand-Owned Series · Outdoor</div>
+        <div class="proj-name">YETI Presents</div>
+      </div>
+    </div>
+    <ul class="bullets">
+      <li>Short documentary films about the kind of people who use YETI gear, including anglers, hunters, cooks and surfers.</li>
+      <li>They are built around personal stories rather than gear, and YETI has released them free on YouTube for close to a decade.</li>
+    </ul>
+    <div class="proj-video-embed">
+      <iframe src="https://www.youtube-nocookie.com/embed/OmrufRLGdAk" title="YETI Presents: A Thousand Casts" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">YETI · <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLT6IyUkzp1o2G2YHBFRsUDP_NLg_jh3QV">Film library</a></p>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-meta">
+        <div class="proj-label">Brand + Creator · Travel &amp; Automotive</div>
+        <div class="proj-name">Wildly Wyoming</div>
+      </div>
+    </div>
+    <ul class="bullets">
+      <li>Three teams of Bronco drivers compete across Wyoming, mixing outdoor challenges with local giveback projects along the route.</li>
+      <li>The shoot covered 28 locations and 1,300 miles across five episodes of 15 to 20 minutes. Outside reported 11.3 million impressions and 8 million video views, and $70,000 went to local organizations.</li>
+    </ul>
+    <div class="proj-video-embed">
+      <iframe src="https://www.youtube-nocookie.com/embed/A2IGzv-E1WU" title="Wildly Wyoming Episode 1" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">Ford Bronco Wild Fund, Wyoming Tourism and Outside · <a target="_blank" rel="noopener" href="https://shortyawards.com/16th/wildly-wyoming">Case study and results</a></p>
   </div>
 
   <div class="proj-card">
@@ -422,8 +583,8 @@ body{background:var(--bg);min-height:100vh}
       </div>
     </div>
     <ul class="bullets">
-      <li>Scripted action-comedy short films about two hotel bellmen, set in and around Marriott properties.</li>
-      <li>Three films, made by Marriott's own content studio. The first reportedly passed 5.1 million views.</li>
+      <li>Scripted action-comedy shorts about two hotel bellmen, set in and around Marriott properties.</li>
+      <li>Three films made by Marriott's own content studio, with the first reportedly passing 5.1 million views.</li>
     </ul>
     <div class="proj-video-embed">
       <iframe src="https://www.youtube-nocookie.com/embed/ZOgteFrOKt8" title="Two Bellmen · Marriott" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -439,8 +600,8 @@ body{background:var(--bg);min-height:100vh}
       </div>
     </div>
     <ul class="bullets">
-      <li>Documentary shorts about skaters, artists, musicians and other people living outside the mainstream.</li>
-      <li>The films stay on the people and their scene. The shoes are barely mentioned, and subjects wore their own.</li>
+      <li>Portraits of skaters, artists, musicians and other people living outside the mainstream.</li>
+      <li>The shoes are barely mentioned, and the subjects wore their own rather than being dressed by the brand.</li>
     </ul>
     <div class="proj-video-embed">
       <iframe src="https://www.youtube-nocookie.com/embed/s5inJUHviG0" title="Living Off the Wall · Vans" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -451,35 +612,18 @@ body{background:var(--bg);min-height:100vh}
   <div class="proj-card">
     <div class="proj-header">
       <div class="proj-meta">
-        <div class="proj-label">Brand-Owned Series · Beauty</div>
-        <div class="proj-name">Cosmetic Criminals / Vanity Vandals</div>
+        <div class="proj-label">Brand + Creator · Holiday</div>
+        <div class="proj-name">Merry &amp; Bright</div>
       </div>
     </div>
     <ul class="bullets">
-      <li>A recurring comedy series that parodies true-crime documentaries, with detectives investigating makeup-related crimes.</li>
-      <li>The 2026 chapter, Vanity Vandals, is a ten-minute film released across digital and streaming platforms.</li>
+      <li>Three ten-minute holiday episodes hosted by Jordin Sparks, each one turning a family's home over for Christmas.</li>
+      <li>QR codes on screen let viewers buy the products shown, and it ran on VIZIO's home screen over the 2023 holidays.</li>
     </ul>
     <div class="proj-video-embed">
-      <iframe src="https://www.youtube-nocookie.com/embed/86ajudMFcPk" title="Vanity Vandals · e.l.f. Cosmetics" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe src="https://www.youtube-nocookie.com/embed/odMfEqOi8nM" title="Merry and Bright · The Home Depot" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">e.l.f. Cosmetics · <a target="_blank" rel="noopener" href="https://investor.elfbeauty.com/stock-and-financial/press-releases/landing-news/2026/03-31-2026-050113142">Announcement</a> · <a target="_blank" rel="noopener" href="https://www.thedrum.com/awards-case-study/how-elf-cosmetics-courtroom-drama-gave-us-new-way-help-us-judge-real-beauty">The Drum</a></p>
-  </div>
-
-  <div class="proj-card">
-    <div class="proj-header">
-      <div class="proj-meta">
-        <div class="proj-label">Brand + Creator · Kitchen</div>
-        <div class="proj-name">IKEA Kitchen Showroom Showdown</div>
-      </div>
-    </div>
-    <ul class="bullets">
-      <li>A competition where two hosts each design and build their own kitchen under the same set of rules.</li>
-      <li>Five episodes plus extra social content, made by IKEA Canada with the McGillivray Group. Launched February 2026.</li>
-    </ul>
-    <div class="proj-video-embed">
-      <iframe src="https://www.youtube-nocookie.com/embed/GU4rQi3LLJY" title="IKEA Kitchen Showroom Showdown: The Big Reveal" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">IKEA Canada, 2026 · <a target="_blank" rel="noopener" href="https://www.ikea.com/ca/en/campaigns/kitchen-showroom-showdown-pub9c582730/">IKEA campaign page</a></p>
+    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">The Home Depot with VIZIO, 2023 · <a target="_blank" rel="noopener" href="https://www.retaildive.com/news/home-depot-vizio-holiday-shoppable-content-qr-codes/698789/">Retail Dive</a></p>
   </div>
 
   <div class="proj-card">
@@ -493,21 +637,10 @@ body{background:var(--bg);min-height:100vh}
       <li>A multi-part sponsored makeover of the creator's own dining room, built around a specific Behr color.</li>
       <li>Running now on TikTok, posted in parts as the room comes together.</li>
     </ul>
-    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">Behr x LaurDIY · <a target="_blank" rel="noopener" href="https://www.tiktok.com/@laurdiy/video/7576382762345581838">Watch on TikTok</a></p>
-  </div>
-
-  <div class="proj-card">
-    <div class="proj-header">
-      <div class="proj-meta">
-        <div class="proj-label">Brand + Creator · Holiday</div>
-        <div class="proj-name">Merry &amp; Bright</div>
-      </div>
+    <div class="tt-row">
+      <div class="tt-embed"><iframe src="https://www.tiktok.com/embed/v2/7576382762345581838" title="Behr x LaurDIY dining room" loading="lazy" allow="encrypted-media" allowfullscreen></iframe></div>
     </div>
-    <ul class="bullets">
-      <li>Three ten-minute holiday makeover episodes hosted by Jordin Sparks, each transforming a family's home for Christmas.</li>
-      <li>QR codes on screen let viewers buy the products shown. Ran on VIZIO's home screen over the 2023 holidays.</li>
-    </ul>
-    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">The Home Depot, 2023 · <a target="_blank" rel="noopener" href="https://markets.financialcontent.com/pennwell.pennenergy/article/bizwire-2023-11-1-vizios-home-screen-creates-a-portal-to-exclusive-holiday-themed-shoppable-content-series">Announcement and details</a></p>
+    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">Behr x LaurDIY · <a target="_blank" rel="noopener" href="https://www.tiktok.com/@laurdiy/video/7576382762345581838">Watch on TikTok</a></p>
   </div>
 
   <div class="proj-card">
@@ -519,7 +652,7 @@ body{background:var(--bg);min-height:100vh}
     </div>
     <ul class="bullets">
       <li>A makeover series hosted by Wayfair's creative director, redoing the homes of creators and lifestyle influencers.</li>
-      <li>Viewers could buy the furniture shown through pop-up cards in the video. Launched 2015 with the YouTube network Kin Community.</li>
+      <li>Viewers could buy the furniture shown through pop-up cards in the video, which made it an early version of shoppable content. It launched in 2015 with the YouTube network Kin Community.</li>
     </ul>
     <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">Wayfair, 2015 · <a target="_blank" rel="noopener" href="https://www.homeaccentstoday.com/lamps/wayfair-launches-shoppable-youtube-series/">Home Accents Today</a></p>
   </div>
@@ -533,7 +666,7 @@ body{background:var(--bg);min-height:100vh}
     </div>
     <ul class="bullets">
       <li>Eleven designers and DIY creators make over spaces using the brand's paint, built around the annual Color of the Year.</li>
-      <li>Includes a charitable strand where creators repaint shelters and community centers.</li>
+      <li>A charitable strand runs alongside it, in which the creators repaint shelters and community centers.</li>
     </ul>
     <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">Sherwin-Williams · <a target="_blank" rel="noopener" href="https://www.sherwin-williams.com/homeowners/inspiration/diy-influencers">Program page</a></p>
   </div>
@@ -546,8 +679,8 @@ body{background:var(--bg);min-height:100vh}
       </div>
     </div>
     <ul class="bullets">
-      <li>Two former car-magazine editors buy junk cars and get them running again on camera, then drive them somewhere far.</li>
-      <li>Ran on YouTube from 2012 to 2018. Dodge came on as sponsor in 2015, and a live event, Roadkill Nights, grew out of it.</li>
+      <li>Two former car-magazine editors buy junk cars, get them running again on camera, and then drive them somewhere far away.</li>
+      <li>The show ran on YouTube from 2012 to 2018, Dodge came on as sponsor in 2015, and a live event called Roadkill Nights grew out of it.</li>
     </ul>
     <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">Sponsored by Dodge, 2012 to 2018 · <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Roadkill_(web_series)">Background</a></p>
   </div>
@@ -561,7 +694,7 @@ body{background:var(--bg);min-height:100vh}
     </div>
     <ul class="bullets">
       <li>A slate of original films, series and podcasts made for small-business owners, launched with more than 50 titles.</li>
-      <li>Produced with partners including Vice and the Queer Eye production company. Episodes run five to eight minutes and are free.</li>
+      <li>Mailchimp produced it with partners including Vice and the Queer Eye production company, and the episodes run five to eight minutes and are free.</li>
     </ul>
     <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">Mailchimp, 2019 · <a target="_blank" rel="noopener" href="https://variety.com/2019/digital/news/mailchimp-presents-entertainment-studio-1203235773/">Variety</a></p>
   </div>
@@ -580,11 +713,11 @@ body{background:var(--bg);min-height:100vh}
 
   <div class="section-block">
     <ul class="bullets">
-      <li><strong>IKEA's 4.1 percent store-sales lift</strong> comes from IKEA's own award entry, so it is self-reported. Worth quoting as IKEA's reported result rather than as an independent fact.</li>
-      <li><strong>Behr's run length</strong> is four weeks in one source and six in another. The view and follower figures match across both.</li>
-      <li><strong>The e.l.f. view count</strong> comes from launch coverage in the first days, so it is early rather than settled.</li>
-      <li><strong>Marriott's view totals and Roadkill's episode numbers</strong> come from press write-ups rather than from the brands.</li>
-      <li><strong>One gap worth knowing about:</strong> we found no strong example of a car or clothing brand paying for a creator's own makeover project. Those categories tend to sponsor formats that already exist.</li>
+      <li><strong>Most of the figures on this page come from the brands' own award entries.</strong> They are specific and consistently reported, but they are still self-reported, so they are worth quoting as the brand's stated result rather than as an independent finding.</li>
+      <li><strong>IKEA's 4.1 percent store-sales lift</strong> is the number most likely to be questioned, because it claims a sales effect rather than a viewing one.</li>
+      <li><strong>Behr's run length</strong> is given as four weeks in one source and six in another, though the view and follower figures match across both.</li>
+      <li><strong>Marriott's view totals and Roadkill's episode numbers</strong> come from press write-ups rather than from the brands themselves.</li>
+      <li><strong>On categories,</strong> cars are covered here by eBay Motors, Ford and Dodge. Clothing is the thinner one, where brands tend to make their own documentary work rather than pay for a creator's project.</li>
     </ul>
   </div>
 
@@ -596,15 +729,15 @@ body{background:var(--bg);min-height:100vh}
     <div class="cs-name">The Same Idea, For The Backyard</div>
     <div class="cs-section">
       <div class="cs-section-label">What they have in common</div>
-      <div class="cs-section-body">A brand pays for a real makeover, and the video of it becomes something people want to watch. The same pattern shows up across home, cars, beauty and clothing.</div>
+      <div class="cs-section-body">In every example here the brand paid for something real to happen, whether that was a garden being built, a car being modified or a film being shot, and the video of it was good enough that people watched it by choice.</div>
     </div>
     <div class="cs-section">
       <div class="cs-section-label">The POLYWOOD version</div>
-      <div class="cs-section-body">An influencer agency finds a creator who wants to redo their yard. POLYWOOD brings in a designer to plan it. We film the whole process.</div>
+      <div class="cs-section-body">An influencer agency finds a creator who wants to redo their yard, POLYWOOD brings in a designer to plan the space, and we film the whole process from the first walkthrough to the finished reveal.</div>
     </div>
     <div class="cs-section">
       <div class="cs-section-label">The format</div>
-      <div class="cs-section-body">Individual videos, not a serialized show. The same setup runs again with a new creator each time. The furniture is what the space gets built around rather than the subject of a sales pitch.</div>
+      <div class="cs-section-body">Each video stands on its own rather than building into a series, so the same setup can run again with a new creator whenever it makes sense. The furniture is simply what the space gets built around.</div>
     </div>
   </div>
 
