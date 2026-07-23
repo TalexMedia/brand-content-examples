@@ -259,6 +259,12 @@ body{background:var(--bg);min-height:100vh}
 .proj-desc{font-size:13.5px;color:var(--txt2);line-height:1.75;padding:0 0 0.25rem 0}
 .proj-video-embed{margin-top:1.1rem;position:relative;width:100%;aspect-ratio:16/9;background:var(--txt);border-radius:8px;overflow:hidden}
 .proj-video-embed iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;display:block}
+.bullets{list-style:none;margin:0.15rem 0 0;padding:0}
+.bullets li{position:relative;padding-left:16px;font-size:13.5px;color:var(--txt2);line-height:1.7;margin-bottom:7px}
+.bullets li:last-child{margin-bottom:0}
+.bullets li::before{content:"";position:absolute;left:2px;top:0.62em;width:5px;height:5px;border-radius:50%;background:var(--o)}
+.bullets li strong{color:var(--txt);font-weight:500}
+.bullets li em{font-family:'EB Garamond',Georgia,serif;font-style:italic;color:var(--txt)}
 @media(max-width:560px){
   .tv-network-strip{grid-template-columns:1fr}
   .tv-feature-grid{grid-template-columns:1fr}
@@ -300,7 +306,7 @@ body{background:var(--bg);min-height:100vh}
   </header>
 
   <!-- Section 01 -->
-  <div class="section-intro">
+  <div class="section-intro" style="margin-top:2.5rem">
     <div class="section-intro-row">
       <span class="sec-pill-orange">01</span>
       <span class="section-eyebrow">Start Here</span>
@@ -316,7 +322,12 @@ body{background:var(--bg);min-height:100vh}
         <div class="proj-name">OMG We're Coming Over</div>
       </div>
     </div>
-    <p class="proj-desc">The closest cousin to what we are describing. A designer and her team walk into one creator's real space, redo it top to bottom, and film the whole thing. The same engine runs every episode with a new person in the chair, and brand products get built into the room instead of read out in an ad break. Wayfair and Legrand have both run integrations through it. The format is the star, not any single episode, which is exactly what makes it repeatable.</p>
+    <ul class="bullets">
+      <li>A designer and her team redo one creator's real space top to bottom, filmed start to finish.</li>
+      <li>The same format runs every episode with a new person in the chair.</li>
+      <li>Brand products get built into the room instead of read out in an ad break. Wayfair and Legrand have both run integrations through it.</li>
+      <li><strong>Why it matters:</strong> the format is the star, not any single episode, which is what makes it repeatable.</li>
+    </ul>
     <div class="proj-video-embed">
       <iframe src="https://www.youtube-nocookie.com/embed/vCvFmuERE_I" title="OMG We're Coming Over — Mr. Kate" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
@@ -330,7 +341,12 @@ body{background:var(--bg);min-height:100vh}
         <div class="proj-name">The Weekender</div>
       </div>
     </div>
-    <p class="proj-desc">A host helps one homeowner finish a full space in a single weekend. It launched in 2016 with ten episodes across Apple TV, Fire TV, Roku and YouTube, and it has run for at least seven seasons since, including the backyard episode here. This is the durability argument. A retailer built one format and kept it alive for years, which is the case against treating video as a one-and-done spend.</p>
+    <ul class="bullets">
+      <li>A host helps one homeowner finish a full space in a single weekend.</li>
+      <li>Launched in 2016 with ten episodes across Apple TV, Fire TV, Roku and YouTube.</li>
+      <li>Has run for at least seven seasons since, including the backyard episode here.</li>
+      <li><strong>Why it matters:</strong> this is the durability argument. A retailer built one format and kept it alive for years, rather than treating video as a one-and-done spend.</li>
+    </ul>
     <div class="proj-video-embed">
       <iframe src="https://www.youtube-nocookie.com/embed/xDoSLyt_Cxg" title="The Weekender: The Epic Backyard — Lowe's" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
@@ -344,7 +360,12 @@ body{background:var(--bg);min-height:100vh}
         <div class="proj-name">IKEA Home Tour</div>
       </div>
     </div>
-    <p class="proj-desc">Five actual IKEA employees travel the country solving real families' design problems. The first season alone was 28 videos across 13 makeovers. Because the hosts are staff rather than celebrities, the whole thing feels attainable instead of aspirational. It is also the example with a sales figure attached. IKEA reported store sales rose an average of 4.1 percent during the weeks the series ran, alongside 5.6 million video views. Present that as IKEA's own reported result, since it comes from their award entry.</p>
+    <ul class="bullets">
+      <li>Five actual IKEA employees travel the country solving real families' design problems.</li>
+      <li>The first season alone was 28 videos across 13 makeovers.</li>
+      <li>Staff hosts rather than celebrities, so the whole thing feels attainable instead of aspirational.</li>
+      <li><strong>The number:</strong> IKEA reported store sales rose an average of 4.1 percent during the weeks it ran, plus 5.6 million video views. Present it as IKEA's own reported result.</li>
+    </ul>
     <div class="proj-video-embed">
       <iframe src="https://www.youtube-nocookie.com/embed/iBAutIOMhyc" title="IKEA Home Tour Episode 101" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
@@ -358,7 +379,12 @@ body{background:var(--bg);min-height:100vh}
         <div class="proj-name">YETI Presents</div>
       </div>
     </div>
-    <p class="proj-desc">Short documentaries built around the people YETI's gear serves, released free and running for close to a decade. The discipline is the lesson. Their creative lead has said the brief from leadership was, in effect, do not show a cooler and do not talk about coolers. The product earns its place by being useful in the story rather than pointed at. Use this to set the quality bar in the room, not as the template for the build.</p>
+    <ul class="bullets">
+      <li>Short documentaries built around the people YETI's gear serves, released free for close to a decade.</li>
+      <li>The brief from leadership, in effect: do not show a cooler, do not talk about coolers.</li>
+      <li>The product earns its place by being useful in the story, not pointed at.</li>
+      <li><strong>How to use it:</strong> set the quality bar in the room, not as the template for the build.</li>
+    </ul>
     <div class="proj-video-embed">
       <iframe src="https://www.youtube-nocookie.com/embed/OmrufRLGdAk" title="YETI Presents: A Thousand Casts" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
@@ -372,7 +398,12 @@ body{background:var(--bg);min-height:100vh}
         <div class="proj-name">To DIY For</div>
       </div>
     </div>
-    <p class="proj-desc">A competition where DIY creators took on refurb challenges using Behr products, with weekly winners decided by votes in the comments. It lived on TikTok, so it is linked rather than embedded here. This is the example that answers whether the format moves numbers, and it does it for a <strong>paint company</strong>, not a lifestyle brand. Reported results: 108 million video views, 120 million impressions, and a 66 percent jump in followers that made Behr the most-followed major paint brand on TikTok.</p>
+    <ul class="bullets">
+      <li>A competition where DIY creators took on refurb challenges using Behr products.</li>
+      <li>Weekly winners decided by votes in the comments. It lived on TikTok, so it is linked rather than embedded here.</li>
+      <li>The example that answers whether the format moves numbers, and it does it for a <strong>paint company</strong>, not a lifestyle brand.</li>
+      <li><strong>Reported:</strong> 108 million video views, 120 million impressions, and a 66 percent follower jump that made Behr the most-followed major paint brand on TikTok.</li>
+    </ul>
     <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">Behr Paint · <a target="_blank" rel="noopener" href="https://shortyawards.com/15th/behr-paint-company-to-diy-for-campaign">Case study and results</a> · <a target="_blank" rel="noopener" href="https://www.marketingdive.com/news/behr-paint-diy-marketing-millennial-homeowners-tiktok/642499/">Marketing Dive</a></p>
   </div>
 
@@ -395,7 +426,11 @@ body{background:var(--bg);min-height:100vh}
         <div class="proj-name">Two Bellmen</div>
       </div>
     </div>
-    <p class="proj-desc">Scripted short films shot in and around Marriott properties, made by the brand's own content studio. The first film reportedly passed 5.1 million views and the first two together more than 12 million. Proof that a brand can make something people watch for the story, with the venue as the co-star.</p>
+    <ul class="bullets">
+      <li>Scripted short films shot in and around Marriott properties, made by the brand's own content studio.</li>
+      <li>The first film reportedly passed 5.1 million views, the first two together more than 12 million.</li>
+      <li>Proof a brand can make something people watch for the story, with the venue as the co-star.</li>
+    </ul>
     <div class="proj-video-embed">
       <iframe src="https://www.youtube-nocookie.com/embed/ZOgteFrOKt8" title="Two Bellmen — Marriott" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
@@ -409,7 +444,11 @@ body{background:var(--bg);min-height:100vh}
         <div class="proj-name">Living Off the Wall</div>
       </div>
     </div>
-    <p class="proj-desc">Documentary shorts about skaters, artists and other people living outside the mainstream. The craft note worth stealing: nobody in the films talks about shoes, and subjects wore their own. The brand shows up as a point of view rather than a product placement.</p>
+    <ul class="bullets">
+      <li>Documentary shorts about skaters, artists and other people living outside the mainstream.</li>
+      <li>Nobody in the films talks about shoes, and subjects wore their own.</li>
+      <li>The brand shows up as a point of view rather than a product placement.</li>
+    </ul>
     <div class="proj-video-embed">
       <iframe src="https://www.youtube-nocookie.com/embed/s5inJUHviG0" title="Living Off the Wall — Vans" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
@@ -423,7 +462,11 @@ body{background:var(--bg);min-height:100vh}
         <div class="proj-name">Cosmetic Criminals / Vanity Vandals</div>
       </div>
     </div>
-    <p class="proj-desc">A recurring scripted comedy universe that spoofs true-crime documentaries. The 2026 chapter, Vanity Vandals, is a ten-minute film that reportedly hit close to three million views within days of launch. Shows a mass-market brand building a returning entertainment format instead of one-off ads.</p>
+    <ul class="bullets">
+      <li>A recurring scripted comedy universe that spoofs true-crime documentaries.</li>
+      <li>The 2026 chapter, Vanity Vandals, is a ten-minute film that reportedly hit close to three million views within days of launch.</li>
+      <li>Shows a mass-market brand building a returning entertainment format instead of one-off ads.</li>
+    </ul>
     <div class="proj-video-embed">
       <iframe src="https://www.youtube-nocookie.com/embed/86ajudMFcPk" title="Vanity Vandals — e.l.f. Cosmetics" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
@@ -437,7 +480,11 @@ body{background:var(--bg);min-height:100vh}
         <div class="proj-name">Behr x LaurDIY Dining Room</div>
       </div>
     </div>
-    <p class="proj-desc">A live, multi-part sponsored makeover of the creator's own dining room built around a specific Behr color. This is the closest thing to the exact POLYWOOD mechanic happening right now: a brand funds one creator's real space, filmed as an ongoing series. <a target="_blank" rel="noopener" href="https://www.tiktok.com/@laurdiy/video/7576382762345581838">Watch on TikTok</a>.</p>
+    <ul class="bullets">
+      <li>A live, multi-part sponsored makeover of the creator's own dining room, built around a specific Behr color.</li>
+      <li>The closest thing to the exact POLYWOOD mechanic happening right now: a brand funds one creator's real space, filmed as an ongoing series.</li>
+    </ul>
+    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">Behr x LaurDIY · <a target="_blank" rel="noopener" href="https://www.tiktok.com/@laurdiy/video/7576382762345581838">Watch on TikTok</a></p>
   </div>
 
   <div class="proj-card">
@@ -447,7 +494,12 @@ body{background:var(--bg);min-height:100vh}
         <div class="proj-name">Merry &amp; Bright</div>
       </div>
     </div>
-    <p class="proj-desc">Three ten-minute holiday makeover episodes, hosted by Jordin Sparks, with QR codes on screen that sent viewers straight to a shop-the-look page. A clean example of closing the loop from entertainment to cart, which is the question a retailer always asks. <a target="_blank" rel="noopener" href="https://markets.financialcontent.com/pennwell.pennenergy/article/bizwire-2023-11-1-vizios-home-screen-creates-a-portal-to-exclusive-holiday-themed-shoppable-content-series">The Home Depot, 2023</a>.</p>
+    <ul class="bullets">
+      <li>Three ten-minute holiday makeover episodes, hosted by Jordin Sparks.</li>
+      <li>QR codes on screen sent viewers straight to a shop-the-look page.</li>
+      <li>A clean example of closing the loop from entertainment to cart, which is the question a retailer always asks.</li>
+    </ul>
+    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">The Home Depot, 2023 · <a target="_blank" rel="noopener" href="https://markets.financialcontent.com/pennwell.pennenergy/article/bizwire-2023-11-1-vizios-home-screen-creates-a-portal-to-exclusive-holiday-themed-shoppable-content-series">Announcement and details</a></p>
   </div>
 
   <div class="proj-card">
@@ -457,7 +509,11 @@ body{background:var(--bg);min-height:100vh}
         <div class="proj-name">IKEA Kitchen Showroom Showdown</div>
       </div>
     </div>
-    <p class="proj-desc">A five-part design competition where two known hosts each build a dream kitchen under the same rules. A current, modest-scale example of a retailer hiring recognizable talent and a real production company to make a watchable series. <a target="_blank" rel="noopener" href="https://www.ikea.com/ca/en/campaigns/kitchen-showroom-showdown-pub9c582730/">IKEA Canada, 2026</a>.</p>
+    <ul class="bullets">
+      <li>A five-part design competition where two known hosts each build a dream kitchen under the same rules.</li>
+      <li>A current, modest-scale example of a retailer hiring recognizable talent and a real production company to make a watchable series.</li>
+    </ul>
+    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">IKEA Canada, 2026 · <a target="_blank" rel="noopener" href="https://www.ikea.com/ca/en/campaigns/kitchen-showroom-showdown-pub9c582730/">IKEA campaign page</a></p>
   </div>
 
   <div class="proj-card">
@@ -467,7 +523,12 @@ body{background:var(--bg);min-height:100vh}
         <div class="proj-name">Overhaul</div>
       </div>
     </div>
-    <p class="proj-desc">An early shoppable makeover series where the first episode redid a YouTuber's space and let viewers buy the furniture through pop-up cards. Dated now, but the earliest clean version of brand plus creator plus buy-what-you-see. <a target="_blank" rel="noopener" href="https://www.homeaccentstoday.com/lamps/wayfair-launches-shoppable-youtube-series/">Wayfair, 2015</a>.</p>
+    <ul class="bullets">
+      <li>An early shoppable makeover series; the first episode redid a YouTuber's space.</li>
+      <li>Viewers could buy the furniture through pop-up cards.</li>
+      <li>Dated now, but the earliest clean version of brand plus creator plus buy-what-you-see.</li>
+    </ul>
+    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">Wayfair, 2015 · <a target="_blank" rel="noopener" href="https://www.homeaccentstoday.com/lamps/wayfair-launches-shoppable-youtube-series/">Home Accents Today</a></p>
   </div>
 
   <div class="proj-card">
@@ -477,7 +538,11 @@ body{background:var(--bg);min-height:100vh}
         <div class="proj-name">DIY Influencer Program</div>
       </div>
     </div>
-    <p class="proj-desc">Eleven designers making over spaces around the annual Color of the Year, plus a charitable community strand. Included as a contrast: this is what the creator-project idea looks like as a loose roster, without a single format holding it together. <a target="_blank" rel="noopener" href="https://www.sherwin-williams.com/homeowners/inspiration/diy-influencers">Sherwin-Williams</a>.</p>
+    <ul class="bullets">
+      <li>Eleven designers making over spaces around the annual Color of the Year, plus a charitable community strand.</li>
+      <li>A contrast: what the creator-project idea looks like as a loose roster, without one format holding it together.</li>
+    </ul>
+    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">Sherwin-Williams · <a target="_blank" rel="noopener" href="https://www.sherwin-williams.com/homeowners/inspiration/diy-influencers">Program page</a></p>
   </div>
 
   <div class="proj-card">
@@ -487,7 +552,12 @@ body{background:var(--bg);min-height:100vh}
         <div class="proj-name">Roadkill</div>
       </div>
     </div>
-    <p class="proj-desc">Two former magazine editors buy junk cars and revive them on camera. Dodge came on as sponsor in 2015, and a real-world festival, Roadkill Nights, spun out of it. The automotive proof that a brand can back an existing enthusiast format instead of building one from scratch. <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Roadkill_(web_series)">Sponsored by Dodge, 2012 to 2018</a>.</p>
+    <ul class="bullets">
+      <li>Two former magazine editors buy junk cars and revive them on camera.</li>
+      <li>Dodge came on as sponsor in 2015, and a real-world festival, Roadkill Nights, spun out of it.</li>
+      <li>The automotive proof that a brand can back an existing enthusiast format instead of building one from scratch.</li>
+    </ul>
+    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">Sponsored by Dodge, 2012 to 2018 · <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Roadkill_(web_series)">Background</a></p>
   </div>
 
   <div class="proj-card">
@@ -497,7 +567,12 @@ body{background:var(--bg);min-height:100vh}
         <div class="proj-name">Mailchimp Presents</div>
       </div>
     </div>
-    <p class="proj-desc">A whole slate of original films, series and podcasts for small-business owners, made with partners like Vice and the Queer Eye production company. This is the far end of the spectrum, a brand becoming a studio. Useful as a horizon, not a starting point. <a target="_blank" rel="noopener" href="https://variety.com/2019/digital/news/mailchimp-presents-entertainment-studio-1203235773/">Mailchimp, 2019</a>.</p>
+    <ul class="bullets">
+      <li>A whole slate of original films, series and podcasts for small-business owners.</li>
+      <li>Made with partners like Vice and the Queer Eye production company.</li>
+      <li>The far end of the spectrum, a brand becoming a studio. Useful as a horizon, not a starting point.</li>
+    </ul>
+    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">Mailchimp, 2019 · <a target="_blank" rel="noopener" href="https://variety.com/2019/digital/news/mailchimp-presents-entertainment-studio-1203235773/">Variety</a></p>
   </div>
 
   <hr class="rule-orange"/>
@@ -513,11 +588,13 @@ body{background:var(--bg);min-height:100vh}
   </div>
 
   <div class="section-block">
-    <p><strong>IKEA's 4.1 percent store-sales lift</strong> is a self-reported figure from IKEA's own award entry. It is the strongest number here and also the one a skeptical exec is most likely to poke at, so present it as IKEA's reported result rather than an independent fact.</p>
-    <p><strong>Behr's run length</strong> is described as four weeks in one source and six in another. The view and follower figures are consistent across both, so lead with those.</p>
-    <p><strong>The e.l.f. Vanity Vandals view count</strong> comes from launch coverage, so treat it as an early, brand-adjacent number. The purchase-intent and favorability lifts from the earlier courtroom campaign are the steadier stats to cite.</p>
-    <p><strong>Marriott's view totals and Roadkill's per-episode numbers</strong> come from press and secondary write-ups rather than the brands directly. Fine to mention, worth softening the language.</p>
-    <p><strong>One finding worth naming out loud:</strong> there is no strong example of an automotive or apparel brand funding a creator's own transformation project. Those categories lean toward sponsoring formats that already exist. That gap is part of why the POLYWOOD idea has room to be distinctive.</p>
+    <ul class="bullets">
+      <li><strong>IKEA's 4.1 percent store-sales lift</strong> is a self-reported figure from IKEA's own award entry. It is the strongest number here and the one a skeptical exec is most likely to poke at, so present it as IKEA's reported result rather than an independent fact.</li>
+      <li><strong>Behr's run length</strong> is four weeks in one source and six in another. The view and follower figures are consistent across both, so lead with those.</li>
+      <li><strong>The e.l.f. Vanity Vandals view count</strong> comes from launch coverage, so treat it as an early, brand-adjacent number. The purchase-intent and favorability lifts from the earlier courtroom campaign are the steadier stats to cite.</li>
+      <li><strong>Marriott's view totals and Roadkill's per-episode numbers</strong> come from press and secondary write-ups rather than the brands directly. Fine to mention, worth softening the language.</li>
+      <li><strong>One finding worth naming out loud:</strong> there is no strong example of an automotive or apparel brand funding a creator's own transformation project. Those categories lean toward sponsoring formats that already exist. That gap is part of why the POLYWOOD idea has room to be distinctive.</li>
+    </ul>
   </div>
 
   <hr class="rule-orange"/>
