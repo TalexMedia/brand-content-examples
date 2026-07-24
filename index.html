@@ -268,7 +268,15 @@ body{background:var(--bg);min-height:100vh}
 .tt-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:1.1rem}
 .tt-embed{width:100%;max-width:325px;height:740px;border-radius:8px;overflow:hidden;background:var(--txt);flex:0 1 325px}
 .tt-embed iframe{width:100%;height:100%;border:0;display:block}
-.tt-note{font-family:'Oswald',sans-serif;font-weight:400;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--txt3);margin-top:0.6rem}
+.video-facade{cursor:pointer;display:block;border:0;padding:0}
+.video-facade .vf-thumb{position:absolute;top:50%;left:0;width:100%;height:auto;transform:translateY(-50%);display:block}
+.video-facade .vf-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:68px;height:48px;border-radius:12px;background:rgba(0,0,0,0.72);transition:background 0.15s}
+.video-facade .vf-play::after{content:"";position:absolute;top:50%;left:52%;transform:translate(-50%,-50%);border-style:solid;border-width:11px 0 11px 19px;border-color:transparent transparent transparent #fff}
+.video-facade:hover .vf-play,.video-facade:focus-visible .vf-play{background:var(--o)}
+.video-facade:focus-visible{outline:2px solid var(--o);outline-offset:3px}
+.video-facade .vf-title{position:absolute;left:0;right:0;bottom:0;padding:0.6rem 0.75rem;font-family:'Oswald',sans-serif;font-weight:500;font-size:11.5px;letter-spacing:0.04em;color:#fff;background:linear-gradient(to top,rgba(0,0,0,0.78),rgba(0,0,0,0));line-height:1.3}
+.tt-note,.embed-note{font-family:'Oswald',sans-serif;font-weight:400;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--txt3);margin-top:0.6rem}
+.embed-note:first-of-type{margin-top:0.9rem}
 @media(max-width:560px){.tt-embed{height:640px}}
 @media(max-width:560px){
   .tv-network-strip{grid-template-columns:1fr}
@@ -307,7 +315,7 @@ body{background:var(--bg);min-height:100vh}
       <span class="section-eyebrow">Branded Content Examples</span>
     </div>
     <h1 class="disp hero-title">Content People<br/>Choose To Watch</h1>
-    <div class="italic hero-tagline">Twenty-two examples of video that a brand paid for and people still chose to watch.</div>
+    <div class="italic hero-tagline">Twenty-three examples of video that a brand paid for and people still chose to watch.</div>
   </header>
 
   <!-- Section 01 -->
@@ -333,9 +341,7 @@ body{background:var(--bg);min-height:100vh}
       <li>Every episode is posted as a YouTube collaboration across six channels at once, so it appears in the feeds of all six audiences rather than only Home Depot's. Four smaller garden creators join Home Depot and Epic Gardening on the pergola build.</li>
       <li>Epic Gardening brings 4.1 million subscribers to the partnership, against Home Depot's 659,000, so the creator's channel is the larger of the two.</li>
     </ul>
-    <div class="proj-video-embed">
-      <iframe src="https://www.youtube-nocookie.com/embed/ld4P-3i3MPc" title="From Scratch with Epic Gardening: Backyard Pergola" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+    <div class="proj-video-embed video-facade" data-yt="ld4P-3i3MPc" role="button" tabindex="0" aria-label="Play video: From Scratch with Epic Gardening: Backyard Pergola"><img class="vf-thumb" src="https://i.ytimg.com/vi/ld4P-3i3MPc/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">From Scratch with Epic Gardening: Backyard Pergola</span></div>
     <div class="stat-strip">
       <div class="stat-cell"><div class="stat-num">6</div><div class="stat-label">Collaborator Channels</div></div>
       <div class="stat-cell"><div class="stat-num">8</div><div class="stat-label">Episodes</div></div>
@@ -361,9 +367,7 @@ body{background:var(--bg);min-height:100vh}
       <p>Alexandra Gater is a home decor expert, editor, and stylist. In each episode, she helps entrepreneurs make their home offices, workspaces and storefronts more beautiful and functional on a budget.</p>
       <div class="callout-attr">How the channel describes itself</div>
     </div>
-    <div class="proj-video-embed">
-      <iframe src="https://www.youtube-nocookie.com/embed/cJ7QmsUON7U" title="Make My Space Work: Massive Rental Live-Work Transformation" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+    <div class="proj-video-embed video-facade" data-yt="cJ7QmsUON7U" role="button" tabindex="0" aria-label="Play video: Make My Space Work: Massive Rental Live-Work Transformation"><img class="vf-thumb" src="https://i.ytimg.com/vi/cJ7QmsUON7U/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">Make My Space Work: Massive Rental Live-Work Transformation</span></div>
     <div class="stat-strip">
       <div class="stat-cell"><div class="stat-num">26</div><div class="stat-label">Videos</div></div>
       <div class="stat-cell"><div class="stat-num">5.0M</div><div class="stat-label">Channel Views</div></div>
@@ -384,9 +388,7 @@ body{background:var(--bg);min-height:100vh}
       <li>A host helps one homeowner finish a room or a yard over a single weekend.</li>
       <li>The series started in 2016 and has run for at least eight seasons across Apple TV, Fire TV, Roku and YouTube. The episode here is a backyard makeover from season eight.</li>
     </ul>
-    <div class="proj-video-embed">
-      <iframe src="https://www.youtube-nocookie.com/embed/TOj6NJNusAw" title="The Weekender: The Game Changer Backyard" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+    <div class="proj-video-embed video-facade" data-yt="TOj6NJNusAw" role="button" tabindex="0" aria-label="Play video: The Weekender: The Game Changer Backyard"><img class="vf-thumb" src="https://i.ytimg.com/vi/TOj6NJNusAw/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">The Weekender: The Game Changer Backyard</span></div>
     <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">Lowe's · host Monica Mangin · <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLXRbmDDj3R96F9usLRnOqhfnuhpPZoV_j">Season 8 playlist</a></p>
   </div>
 
@@ -401,9 +403,7 @@ body{background:var(--bg);min-height:100vh}
       <li>A designer and her team redo one creator's real room from top to bottom, filmed from the first walkthrough to the reveal.</li>
       <li>A different creator features in each episode, and brands including Wayfair and Legrand have supplied the products used in the makeovers.</li>
     </ul>
-    <div class="proj-video-embed">
-      <iframe src="https://www.youtube-nocookie.com/embed/vCvFmuERE_I" title="OMG We're Coming Over · Mr. Kate" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+    <div class="proj-video-embed video-facade" data-yt="vCvFmuERE_I" role="button" tabindex="0" aria-label="Play video: OMG We're Coming Over · Mr. Kate"><img class="vf-thumb" src="https://i.ytimg.com/vi/vCvFmuERE_I/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">OMG We're Coming Over · Mr. Kate</span></div>
     <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">Mr. Kate · <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLxrcW2MAluZLJIUEXWEKVecuSUfqraW2x">Full playlist</a> · <a target="_blank" rel="noopener" href="https://shortyawards.com/10th/omg-were-coming-over">Shorty Awards writeup</a></p>
   </div>
 
@@ -417,11 +417,20 @@ body{background:var(--bg);min-height:100vh}
     <ul class="bullets">
       <li>Five IKEA employees travel the country and make over rooms in real families' homes, working to whatever problem that particular household has.</li>
       <li>The first season ran to 28 videos across 13 makeovers. IKEA's own figures put it at 5.6 million views, with store sales up an average of 4.1 percent during the weeks it aired.</li>
+      <li>It kept going well past that first season. The makeovers playlist now holds 245 videos with 59.5 million views between them, counting the full episodes alongside trailers and shorter tips.</li>
+      <li>The most watched episode is also the shortest. The teen bedroom episode runs three minutes against the ten to fifteen of a standard episode, and it has drawn 3.2 million views.</li>
     </ul>
-    <div class="proj-video-embed">
-      <iframe src="https://www.youtube-nocookie.com/embed/iBAutIOMhyc" title="IKEA Home Tour Episode 101" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="embed-note">Episode 101, the first one</div>
+    <div class="proj-video-embed video-facade" data-yt="iBAutIOMhyc" role="button" tabindex="0" aria-label="Play video: IKEA Home Tour Episode 101"><img class="vf-thumb" src="https://i.ytimg.com/vi/iBAutIOMhyc/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">IKEA Home Tour Episode 101</span></div>
+    <div class="embed-note">The most watched, at three minutes</div>
+    <div class="proj-video-embed video-facade" data-yt="KgHGm0yXY0s" role="button" tabindex="0" aria-label="Play video: IKEA Home Tour: Teen Bedroom Ideas"><img class="vf-thumb" src="https://i.ytimg.com/vi/KgHGm0yXY0s/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">IKEA Home Tour: Teen Bedroom Ideas</span></div>
+    <div class="stat-strip">
+      <div class="stat-cell"><div class="stat-num">245</div><div class="stat-label">Videos</div></div>
+      <div class="stat-cell"><div class="stat-num">59.5M</div><div class="stat-label">Playlist Views</div></div>
+      <div class="stat-cell"><div class="stat-num">3.2M</div><div class="stat-label">Top Episode</div></div>
     </div>
-    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">IKEA · <a target="_blank" rel="noopener" href="https://shortyawards.com/7th/ikea-home-tour">Full case study and figures</a></p>
+    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">Episode 101 has 647,925 views. The teen bedroom episode has 3,240,538 views, 28,778 likes and 1,005 comments. Figures pulled from the YouTube API on 24 July 2026.</p>
+    <p class="proj-desc" style="margin-top:0.4rem;font-size:12.5px;color:var(--txt3)">IKEA · <a target="_blank" rel="noopener" href="https://shortyawards.com/7th/ikea-home-tour">Full case study and figures</a> · <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLk5L7f7HqQ7FseahfMCjuaixZgxZ8vX8_">Makeovers playlist</a></p>
   </div>
 
   <div class="proj-card">
@@ -435,9 +444,7 @@ body{background:var(--bg);min-height:100vh}
       <li>A DIY competition on TikTok in which creators take on refurbishing challenges using Behr paint, with the weekly winner decided by votes in the comments.</li>
       <li>It has run for at least three seasons, with a $20,000 prize in season two. By Behr's count the campaign drew 108 million video views and lifted followers by 66 percent.</li>
     </ul>
-    <div class="proj-video-embed">
-      <iframe src="https://www.youtube-nocookie.com/embed/Nh9skd_pWGU" title="BEHR: To DIY For Case Film" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+    <div class="proj-video-embed video-facade" data-yt="Nh9skd_pWGU" role="button" tabindex="0" aria-label="Play video: BEHR: To DIY For Case Film"><img class="vf-thumb" src="https://i.ytimg.com/vi/Nh9skd_pWGU/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">BEHR: To DIY For Case Film</span></div>
     <div class="tt-note">The series itself, on TikTok</div>
     <div class="tt-row">
       <div class="tt-embed"><iframe src="https://www.tiktok.com/embed/v2/7395240867407170858" title="Behr To DIY For Season 3" loading="lazy" allow="encrypted-media" allowfullscreen></iframe></div>
@@ -455,7 +462,7 @@ body{background:var(--bg);min-height:100vh}
       <span class="section-eyebrow">More To Draw From</span>
     </div>
     <h2 class="section-title">The Wider Field</h2>
-    <p class="section-subtitle">Sixteen more, across home, cars, beauty, clothing and software.</p>
+    <p class="section-subtitle">Seventeen more, across home, cars, beauty, clothing and software.</p>
   </div>
 
   <div class="proj-card">
@@ -469,9 +476,7 @@ body{background:var(--bg);min-height:100vh}
       <li>Each episode puts two versions of the same car side by side, one left stock and one modified with parts sourced through eBay, then tests them against each other.</li>
       <li>Season two ran to five episodes with seven builder-creators. eBay counted 22.9 million views, 222,000 new subscribers and more than a million hours watched, and its channel went from sixth to first among auto-parts channels.</li>
     </ul>
-    <div class="proj-video-embed">
-      <iframe src="https://www.youtube-nocookie.com/embed/jEe7yZQlhvM" title="Between 2 Rides · eBay Motors" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+    <div class="proj-video-embed video-facade" data-yt="jEe7yZQlhvM" role="button" tabindex="0" aria-label="Play video: Between 2 Rides · eBay Motors"><img class="vf-thumb" src="https://i.ytimg.com/vi/jEe7yZQlhvM/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">Between 2 Rides · eBay Motors</span></div>
     <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">eBay Motors, agency The Many · <a target="_blank" rel="noopener" href="https://shortyawards.com/16th/between-2-rides">Case study and results</a></p>
   </div>
 
@@ -486,9 +491,7 @@ body{background:var(--bg);min-height:100vh}
       <li>The host takes common DIY mistakes and shows how to reverse them, from damaged carpet and badly laid tile to a boring front door.</li>
       <li>Two seasons and twelve episodes, all shot in eleven business days. Home Depot reported more than a million views, and it took a bronze honor at the Shorty Awards.</li>
     </ul>
-    <div class="proj-video-embed">
-      <iframe src="https://www.youtube-nocookie.com/embed/DcbidPwNBNI" title="How to Undo · The Home Depot" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+    <div class="proj-video-embed video-facade" data-yt="DcbidPwNBNI" role="button" tabindex="0" aria-label="Play video: How to Undo · The Home Depot"><img class="vf-thumb" src="https://i.ytimg.com/vi/DcbidPwNBNI/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">How to Undo · The Home Depot</span></div>
     <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">The Home Depot x Mike Montgomery, produced by Trade School · <a target="_blank" rel="noopener" href="https://shortyawards.com/15th/how-to-undo">Case study</a></p>
   </div>
 
@@ -503,9 +506,7 @@ body{background:var(--bg);min-height:100vh}
       <li>The designer Maurice Harris updates rooms that are stuck in a particular decade while keeping some of the original character in place.</li>
       <li>There are five episodes, each one built around a recognizable period rather than a general refresh.</li>
     </ul>
-    <div class="proj-video-embed">
-      <iframe src="https://www.youtube-nocookie.com/embed/mADjl60gkDM" title="Design of the Times · Lowe's" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+    <div class="proj-video-embed video-facade" data-yt="mADjl60gkDM" role="button" tabindex="0" aria-label="Play video: Design of the Times · Lowe's"><img class="vf-thumb" src="https://i.ytimg.com/vi/mADjl60gkDM/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">Design of the Times · Lowe's</span></div>
     <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">Lowe's x Maurice Harris · <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLXRbmDDj3R96bMlKgtQSv_Z_1DoR32r7N">Full playlist</a></p>
   </div>
 
@@ -520,9 +521,7 @@ body{background:var(--bg);min-height:100vh}
       <li>Two people with unresolved tension between them do each other's makeup while talking through the relationship.</li>
       <li>There are two episodes. The first reached 7.6 million views and hit number 16 on YouTube's global trending chart, with no paid media behind it.</li>
     </ul>
-    <div class="proj-video-embed">
-      <iframe src="https://www.youtube-nocookie.com/embed/6JJA4wzklxE" title="Make Up Over Makeup · e.l.f. Cosmetics" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+    <div class="proj-video-embed video-facade" data-yt="6JJA4wzklxE" role="button" tabindex="0" aria-label="Play video: Make Up Over Makeup · e.l.f. Cosmetics"><img class="vf-thumb" src="https://i.ytimg.com/vi/6JJA4wzklxE/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">Make Up Over Makeup · e.l.f. Cosmetics</span></div>
     <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">e.l.f. Cosmetics · <a target="_blank" rel="noopener" href="https://shortyawards.com/16th/make-up-over-makeup">Case study and results</a></p>
   </div>
 
@@ -553,11 +552,30 @@ body{background:var(--bg);min-height:100vh}
     <ul class="bullets">
       <li>A competition in which two hosts each design and build their own kitchen under the same set of rules.</li>
       <li>IKEA Canada made it with the McGillivray Group, running five episodes plus extra social content, and launched it in February 2026.</li>
+      <li>It is the newest thing on this page and the numbers reflect that. The finale has 5,326 views, a long way short of the older IKEA series.</li>
     </ul>
-    <div class="proj-video-embed">
-      <iframe src="https://www.youtube-nocookie.com/embed/GU4rQi3LLJY" title="IKEA Kitchen Showroom Showdown: The Big Reveal" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+    <div class="proj-video-embed video-facade" data-yt="GU4rQi3LLJY" role="button" tabindex="0" aria-label="Play video: IKEA Kitchen Showroom Showdown: The Big Reveal"><img class="vf-thumb" src="https://i.ytimg.com/vi/GU4rQi3LLJY/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">IKEA Kitchen Showroom Showdown: The Big Reveal</span></div>
     <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">IKEA Canada, 2026 · <a target="_blank" rel="noopener" href="https://www.ikea.com/ca/en/campaigns/kitchen-showroom-showdown-pub9c582730/">IKEA campaign page</a></p>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-meta">
+        <div class="proj-label">Honorable Mention · Brand Film · Furniture</div>
+        <div class="proj-name">Oddly IKEA</div>
+      </div>
+    </div>
+    <ul class="bullets">
+      <li>Twenty-five minutes of ASMR, all whispering and soft tapping, shot around IKEA bedding, storage boxes and a desk lamp. It was made as a back-to-college ad for dorm rooms.</li>
+      <li>No presenter, no story and no dialogue beyond the whispering, and it still holds 3.5 million views with 7,774 comments. It is the one on this page that took the biggest swing on format.</li>
+    </ul>
+    <div class="proj-video-embed video-facade" data-yt="uLFaj3Z_tWw" role="button" tabindex="0" aria-label="Play video: Oddly IKEA: IKEA ASMR"><img class="vf-thumb" src="https://i.ytimg.com/vi/uLFaj3Z_tWw/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">Oddly IKEA: IKEA ASMR</span></div>
+    <div class="stat-strip">
+      <div class="stat-cell"><div class="stat-num">25</div><div class="stat-label">Minutes Long</div></div>
+      <div class="stat-cell"><div class="stat-num">3.5M</div><div class="stat-label">Views</div></div>
+      <div class="stat-cell"><div class="stat-num">81K</div><div class="stat-label">Likes</div></div>
+    </div>
+    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">IKEA USA, 2017 · 3,469,559 views, 81,134 likes and 7,774 comments. Figures pulled from the YouTube API on 24 July 2026.</p>
   </div>
 
   <div class="proj-card">
@@ -571,9 +589,7 @@ body{background:var(--bg);min-height:100vh}
       <li>Short documentary films about the kind of people who use YETI gear, including anglers, hunters, cooks and surfers.</li>
       <li>They are built around personal stories rather than gear, and YETI has released them free on YouTube for close to a decade.</li>
     </ul>
-    <div class="proj-video-embed">
-      <iframe src="https://www.youtube-nocookie.com/embed/OmrufRLGdAk" title="YETI Presents: A Thousand Casts" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+    <div class="proj-video-embed video-facade" data-yt="OmrufRLGdAk" role="button" tabindex="0" aria-label="Play video: YETI Presents: A Thousand Casts"><img class="vf-thumb" src="https://i.ytimg.com/vi/OmrufRLGdAk/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">YETI Presents: A Thousand Casts</span></div>
     <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">YETI · <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLT6IyUkzp1o2G2YHBFRsUDP_NLg_jh3QV">Film library</a></p>
   </div>
 
@@ -588,9 +604,7 @@ body{background:var(--bg);min-height:100vh}
       <li>Three teams of Bronco drivers compete across Wyoming, mixing outdoor challenges with local giveback projects along the route.</li>
       <li>The shoot covered 28 locations and 1,300 miles across five episodes of 15 to 20 minutes. Outside reported 11.3 million impressions and 8 million video views, and $70,000 went to local organizations.</li>
     </ul>
-    <div class="proj-video-embed">
-      <iframe src="https://www.youtube-nocookie.com/embed/A2IGzv-E1WU" title="Wildly Wyoming Episode 1" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+    <div class="proj-video-embed video-facade" data-yt="A2IGzv-E1WU" role="button" tabindex="0" aria-label="Play video: Wildly Wyoming Episode 1"><img class="vf-thumb" src="https://i.ytimg.com/vi/A2IGzv-E1WU/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">Wildly Wyoming Episode 1</span></div>
     <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">Ford Bronco Wild Fund, Wyoming Tourism and Outside · <a target="_blank" rel="noopener" href="https://shortyawards.com/16th/wildly-wyoming">Case study and results</a></p>
   </div>
 
@@ -605,9 +619,7 @@ body{background:var(--bg);min-height:100vh}
       <li>Scripted action-comedy shorts about two hotel bellmen, set in and around Marriott properties.</li>
       <li>Three films made by Marriott's own content studio, with the first reportedly passing 5.1 million views.</li>
     </ul>
-    <div class="proj-video-embed">
-      <iframe src="https://www.youtube-nocookie.com/embed/ZOgteFrOKt8" title="Two Bellmen · Marriott" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+    <div class="proj-video-embed video-facade" data-yt="ZOgteFrOKt8" role="button" tabindex="0" aria-label="Play video: Two Bellmen · Marriott"><img class="vf-thumb" src="https://i.ytimg.com/vi/ZOgteFrOKt8/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">Two Bellmen · Marriott</span></div>
     <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">Marriott · <a target="_blank" rel="noopener" href="https://www.hollywoodreporter.com/news/general-news/marriott-content-studio-greenlights-3rd-804632/">Hollywood Reporter</a></p>
   </div>
 
@@ -622,9 +634,7 @@ body{background:var(--bg);min-height:100vh}
       <li>Portraits of skaters, artists, musicians and other people living outside the mainstream.</li>
       <li>The shoes are barely mentioned, and the subjects wore their own rather than being dressed by the brand.</li>
     </ul>
-    <div class="proj-video-embed">
-      <iframe src="https://www.youtube-nocookie.com/embed/s5inJUHviG0" title="Living Off the Wall · Vans" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+    <div class="proj-video-embed video-facade" data-yt="s5inJUHviG0" role="button" tabindex="0" aria-label="Play video: Living Off the Wall · Vans"><img class="vf-thumb" src="https://i.ytimg.com/vi/s5inJUHviG0/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">Living Off the Wall · Vans</span></div>
     <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">Vans · <a target="_blank" rel="noopener" href="https://www.adweek.com/creativity/vans-celebrates-its-fans-and-their-lifestyles-incredible-documentary-series-155787/">Adweek feature</a></p>
   </div>
 
@@ -639,9 +649,7 @@ body{background:var(--bg);min-height:100vh}
       <li>Three ten-minute holiday episodes hosted by Jordin Sparks, each one turning a family's home over for Christmas.</li>
       <li>QR codes on screen let viewers buy the products shown, and it ran on VIZIO's home screen over the 2023 holidays.</li>
     </ul>
-    <div class="proj-video-embed">
-      <iframe src="https://www.youtube-nocookie.com/embed/odMfEqOi8nM" title="Merry and Bright · The Home Depot" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+    <div class="proj-video-embed video-facade" data-yt="odMfEqOi8nM" role="button" tabindex="0" aria-label="Play video: Merry and Bright · The Home Depot"><img class="vf-thumb" src="https://i.ytimg.com/vi/odMfEqOi8nM/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">Merry and Bright · The Home Depot</span></div>
     <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">The Home Depot with VIZIO, 2023 · <a target="_blank" rel="noopener" href="https://www.retaildive.com/news/home-depot-vizio-holiday-shoppable-content-qr-codes/698789/">Retail Dive</a></p>
   </div>
 
@@ -673,9 +681,7 @@ body{background:var(--bg);min-height:100vh}
       <li>A makeover series hosted by Wayfair's creative director, redoing the homes of creators and lifestyle influencers. The debut episode shown here made over the baker Rosanna Pansino's home.</li>
       <li>Viewers could buy the furniture shown through pop-up cards in the video, which made it an early version of shoppable content. It launched in 2015 with the YouTube network Kin Community.</li>
     </ul>
-    <div class="proj-video-embed">
-      <iframe src="https://www.youtube-nocookie.com/embed/mcdiy8DTaR4" title="Overhaul: Rosanna Pansino's New Home Makeover" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+    <div class="proj-video-embed video-facade" data-yt="mcdiy8DTaR4" role="button" tabindex="0" aria-label="Play video: Overhaul: Rosanna Pansino's New Home Makeover"><img class="vf-thumb" src="https://i.ytimg.com/vi/mcdiy8DTaR4/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">Overhaul: Rosanna Pansino's New Home Makeover</span></div>
     <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">Wayfair, 2015 · <a target="_blank" rel="noopener" href="https://www.homeaccentstoday.com/lamps/wayfair-launches-shoppable-youtube-series/">Home Accents Today</a></p>
   </div>
 
@@ -690,9 +696,7 @@ body{background:var(--bg);min-height:100vh}
       <li>Eleven designers and DIY creators make over spaces using the brand's paint, built around the annual Color of the Year. The video here is a garden shed rebuilt around Urbane Bronze.</li>
       <li>A charitable strand runs alongside it, in which the creators repaint shelters and community centers.</li>
     </ul>
-    <div class="proj-video-embed">
-      <iframe src="https://www.youtube-nocookie.com/embed/Za5HwXjl49o" title="Simple Shed Makeover: Sherwin-Williams Color of the Year" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+    <div class="proj-video-embed video-facade" data-yt="Za5HwXjl49o" role="button" tabindex="0" aria-label="Play video: Simple Shed Makeover: Sherwin-Williams Color of the Year"><img class="vf-thumb" src="https://i.ytimg.com/vi/Za5HwXjl49o/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">Simple Shed Makeover: Sherwin-Williams Color of the Year</span></div>
     <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">Sherwin-Williams · <a target="_blank" rel="noopener" href="https://www.sherwin-williams.com/homeowners/inspiration/diy-influencers">Program page</a></p>
   </div>
 
@@ -707,9 +711,7 @@ body{background:var(--bg);min-height:100vh}
       <li>Two former car-magazine editors buy junk cars, get them running again on camera, and then drive them somewhere far away.</li>
       <li>The show ran on YouTube from 2012 to 2018, Dodge came on as sponsor in 2015, and a live event called Roadkill Nights grew out of it. The video here gathers some of its junkyard rescues.</li>
     </ul>
-    <div class="proj-video-embed">
-      <iframe src="https://www.youtube-nocookie.com/embed/MD-QE9fvRZs" title="Roadkill: Recycling the Best Junkyard Cars" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+    <div class="proj-video-embed video-facade" data-yt="MD-QE9fvRZs" role="button" tabindex="0" aria-label="Play video: Roadkill: Recycling the Best Junkyard Cars"><img class="vf-thumb" src="https://i.ytimg.com/vi/MD-QE9fvRZs/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">Roadkill: Recycling the Best Junkyard Cars</span></div>
     <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">Sponsored by Dodge, 2012 to 2018 · <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Roadkill_(web_series)">Background</a></p>
   </div>
 
@@ -724,9 +726,7 @@ body{background:var(--bg);min-height:100vh}
       <li>A slate of original films, series and podcasts made for small-business owners, launched with more than 50 titles.</li>
       <li>Mailchimp produced it with partners including Vice and the Queer Eye production company, and the episodes run five to eight minutes and are free. The video here is from Second Act, the strand made with Vice about small-business owners.</li>
     </ul>
-    <div class="proj-video-embed">
-      <iframe src="https://www.youtube-nocookie.com/embed/tgCuCxoSXXI" title="Second Act: The First LGBTQ+ Mariachi Band" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+    <div class="proj-video-embed video-facade" data-yt="tgCuCxoSXXI" role="button" tabindex="0" aria-label="Play video: Second Act: The First LGBTQ+ Mariachi Band"><img class="vf-thumb" src="https://i.ytimg.com/vi/tgCuCxoSXXI/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">Second Act: The First LGBTQ+ Mariachi Band</span></div>
     <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">Mailchimp, 2019 · <a target="_blank" rel="noopener" href="https://variety.com/2019/digital/news/mailchimp-presents-entertainment-studio-1203235773/">Variety</a> · <a target="_blank" rel="noopener" href="https://mailchimp.com/presents/">Mailchimp Presents</a></p>
   </div>
 
@@ -741,5 +741,30 @@ body{background:var(--bg);min-height:100vh}
   </footer>
 
 </div>
+<script>
+(function(){
+  function play(el){
+    if(el.dataset.loaded) return;
+    el.dataset.loaded = "1";
+    var id = el.getAttribute("data-yt");
+    var f = document.createElement("iframe");
+    f.setAttribute("src","https://www.youtube-nocookie.com/embed/"+id+"?autoplay=1&rel=0");
+    f.setAttribute("title", el.getAttribute("aria-label")||"Video");
+    f.setAttribute("allow","accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
+    f.setAttribute("allowfullscreen","");
+    el.innerHTML = "";
+    el.appendChild(f);
+  }
+  document.addEventListener("click", function(e){
+    var el = e.target.closest(".video-facade");
+    if(el) play(el);
+  });
+  document.addEventListener("keydown", function(e){
+    if(e.key !== "Enter" && e.key !== " ") return;
+    var el = e.target.closest && e.target.closest(".video-facade");
+    if(el){ e.preventDefault(); play(el); }
+  });
+})();
+</script>
 </body>
 </html>
