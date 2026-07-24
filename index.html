@@ -275,6 +275,11 @@ body{background:var(--bg);min-height:100vh}
 .video-facade:hover .vf-play,.video-facade:focus-visible .vf-play{background:var(--o)}
 .video-facade:focus-visible{outline:2px solid var(--o);outline-offset:3px}
 .video-facade .vf-title{position:absolute;left:0;right:0;bottom:0;padding:0.6rem 0.75rem;font-family:'Oswald',sans-serif;font-weight:500;font-size:11.5px;letter-spacing:0.04em;color:#fff;background:linear-gradient(to top,rgba(0,0,0,0.78),rgba(0,0,0,0));line-height:1.3}
+.tt-facade{position:relative;cursor:pointer;display:flex;align-items:center;justify-content:center;background:var(--txt)}
+.tt-facade:hover .vf-play,.tt-facade:focus-visible .vf-play{background:var(--o)}
+.tt-facade:focus-visible{outline:2px solid var(--o);outline-offset:3px}
+.tt-facade-label{position:absolute;left:0;right:0;bottom:0;padding:0.9rem 0.85rem;font-family:'Oswald',sans-serif;font-weight:500;font-size:11.5px;letter-spacing:0.04em;color:#fff;line-height:1.45;text-align:center;background:linear-gradient(to top,rgba(0,0,0,0.85),rgba(0,0,0,0))}
+.tt-facade-label em{font-family:'EB Garamond',Georgia,serif;font-style:italic;color:var(--o);font-size:12.5px}
 .tt-note,.embed-note{font-family:'Oswald',sans-serif;font-weight:400;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--txt3);margin-top:0.6rem}
 .embed-note:first-of-type{margin-top:0.9rem}
 @media(max-width:560px){.tt-embed{height:640px}}
@@ -395,16 +400,24 @@ body{background:var(--bg);min-height:100vh}
   <div class="proj-card">
     <div class="proj-header">
       <div class="proj-meta">
-        <div class="proj-label">Brand + Creator · Interiors</div>
-        <div class="proj-name">OMG We're Coming Over</div>
+        <div class="proj-label">Brand + Creator · Interiors &amp; Outdoor</div>
+        <div class="proj-name">Mr. Kate</div>
       </div>
     </div>
     <ul class="bullets">
-      <li>A designer and her team redo one creator's real room from top to bottom, filmed from the first walkthrough to the reveal.</li>
-      <li>A different creator features in each episode, and brands including Wayfair and Legrand have supplied the products used in the makeovers.</li>
+      <li>Kate Albrecht is a designer who runs her own home-makeover channel, with 3.7 million subscribers and 621 million views across the channel. The audience follows her rather than any brand she works with.</li>
+      <li>Brands fund the work in two ways. In her OMG We're Coming Over series she redoes another creator's room from top to bottom, with companies including Wayfair and Legrand supplying the products that go into the room.</li>
+      <li>She also films builds on her own property, which is what the video here is. She turns a corner of her backyard into a mud kitchen and play area for her kids, with a working faucet, a bridge and garden paths, over 23 minutes.</li>
+      <li>That backyard episode is sponsored by KiwiCo, a children's craft company, rather than by a furniture or building brand. The sponsor pays for the episode while the build itself stays the story.</li>
     </ul>
-    <div class="proj-video-embed video-facade" data-yt="vCvFmuERE_I" role="button" tabindex="0" aria-label="Play video: OMG We're Coming Over · Mr. Kate"><img class="vf-thumb" src="https://i.ytimg.com/vi/vCvFmuERE_I/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">OMG We're Coming Over · Mr. Kate</span></div>
-    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">Mr. Kate · <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLxrcW2MAluZLJIUEXWEKVecuSUfqraW2x">Full playlist</a> · <a target="_blank" rel="noopener" href="https://shortyawards.com/10th/omg-were-coming-over">Shorty Awards writeup</a></p>
+    <div class="proj-video-embed video-facade" data-yt="g5Dsy3MqknA" role="button" tabindex="0" aria-label="Play video: Mr. Kate backyard mud kitchen build"><img class="vf-thumb" src="https://i.ytimg.com/vi/g5Dsy3MqknA/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">Backyard mud kitchen build · Mr. Kate</span></div>
+    <div class="stat-strip">
+      <div class="stat-cell"><div class="stat-num">3.7M</div><div class="stat-label">Subscribers</div></div>
+      <div class="stat-cell"><div class="stat-num">621M</div><div class="stat-label">Channel Views</div></div>
+      <div class="stat-cell"><div class="stat-num">64K</div><div class="stat-label">This Episode</div></div>
+    </div>
+    <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">The backyard episode was posted in July 2026 and has 63,999 views, 4,244 likes and 181 comments. Figures pulled from the YouTube API on 24 July 2026.</p>
+    <p class="proj-desc" style="margin-top:0.4rem;font-size:12.5px;color:var(--txt3)">Mr. Kate · <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLxrcW2MAluZLJIUEXWEKVecuSUfqraW2x">OMG We're Coming Over playlist</a> · <a target="_blank" rel="noopener" href="https://shortyawards.com/10th/omg-were-coming-over">Shorty Awards writeup</a></p>
   </div>
 
   <div class="proj-card">
@@ -447,8 +460,8 @@ body{background:var(--bg);min-height:100vh}
     <div class="proj-video-embed video-facade" data-yt="Nh9skd_pWGU" role="button" tabindex="0" aria-label="Play video: BEHR: To DIY For Case Film"><img class="vf-thumb" src="https://i.ytimg.com/vi/Nh9skd_pWGU/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"/><span class="vf-play" aria-hidden="true"></span><span class="vf-title">BEHR: To DIY For Case Film</span></div>
     <div class="tt-note">The series itself, on TikTok</div>
     <div class="tt-row">
-      <div class="tt-embed"><iframe src="https://www.tiktok.com/embed/v2/7395240867407170858" title="Behr To DIY For Season 3" loading="lazy" allow="encrypted-media" allowfullscreen></iframe></div>
-      <div class="tt-embed"><iframe src="https://www.tiktok.com/embed/v2/7243856543966448942" title="Behr To DIY For Season 2 Challenge 1" loading="lazy" allow="encrypted-media" allowfullscreen></iframe></div>
+      <div class="tt-embed tt-facade" data-tt="7395240867407170858" role="button" tabindex="0" aria-label="Play TikTok: Behr To DIY For Season 3"><span class="vf-play" aria-hidden="true"></span><span class="tt-facade-label">Behr To DIY For Season 3<br/><em>Tap to load TikTok</em></span></div>
+      <div class="tt-embed tt-facade" data-tt="7243856543966448942" role="button" tabindex="0" aria-label="Play TikTok: Behr To DIY For Season 2 Challenge 1"><span class="vf-play" aria-hidden="true"></span><span class="tt-facade-label">Behr To DIY For Season 2 Challenge 1<br/><em>Tap to load TikTok</em></span></div>
     </div>
     <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">Behr Paint · <a target="_blank" rel="noopener" href="https://shortyawards.com/15th/behr-paint-company-to-diy-for-campaign">Case study and results</a> · <a target="_blank" rel="noopener" href="https://www.tiktok.com/@behr">@behr on TikTok</a></p>
   </div>
@@ -537,7 +550,7 @@ body{background:var(--bg);min-height:100vh}
       <li>Four videos, made with kvell collective. On TikTok they pulled 6.3 million organic views at an 11 percent engagement rate, and the series won Branded Series at the 16th Shorty Awards.</li>
     </ul>
     <div class="tt-row">
-      <div class="tt-embed"><iframe src="https://www.tiktok.com/embed/v2/7247200817021750570" title="Adobe Redesigning Signs" loading="lazy" allow="encrypted-media" allowfullscreen></iframe></div>
+      <div class="tt-embed tt-facade" data-tt="7247200817021750570" role="button" tabindex="0" aria-label="Play TikTok: Adobe Redesigning Signs"><span class="vf-play" aria-hidden="true"></span><span class="tt-facade-label">Adobe Redesigning Signs<br/><em>Tap to load TikTok</em></span></div>
     </div>
     <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">Adobe x Max Kolomatsky · <a target="_blank" rel="noopener" href="https://shortyawards.com/16th/redesign-series">Case study and results</a></p>
   </div>
@@ -665,7 +678,7 @@ body{background:var(--bg);min-height:100vh}
       <li>Running now on TikTok, posted in parts as the room comes together.</li>
     </ul>
     <div class="tt-row">
-      <div class="tt-embed"><iframe src="https://www.tiktok.com/embed/v2/7576382762345581838" title="Behr x LaurDIY dining room" loading="lazy" allow="encrypted-media" allowfullscreen></iframe></div>
+      <div class="tt-embed tt-facade" data-tt="7576382762345581838" role="button" tabindex="0" aria-label="Play TikTok: Behr x LaurDIY dining room"><span class="vf-play" aria-hidden="true"></span><span class="tt-facade-label">Behr x LaurDIY dining room<br/><em>Tap to load TikTok</em></span></div>
     </div>
     <p class="proj-desc" style="margin-top:0.9rem;font-size:12.5px;color:var(--txt3)">Behr x LaurDIY · <a target="_blank" rel="noopener" href="https://www.tiktok.com/@laurdiy/video/7576382762345581838">Watch on TikTok</a></p>
   </div>
@@ -755,9 +768,22 @@ body{background:var(--bg);min-height:100vh}
     el.innerHTML = "";
     el.appendChild(f);
   }
+  function playTT(el){
+    if(el.dataset.loaded) return;
+    el.dataset.loaded = "1";
+    var f = document.createElement("iframe");
+    f.setAttribute("src","https://www.tiktok.com/embed/v2/"+el.getAttribute("data-tt"));
+    f.setAttribute("title", el.getAttribute("aria-label")||"TikTok video");
+    f.setAttribute("allow","encrypted-media");
+    f.setAttribute("allowfullscreen","");
+    el.innerHTML = "";
+    el.appendChild(f);
+  }
   document.addEventListener("click", function(e){
     var el = e.target.closest(".video-facade");
-    if(el) play(el);
+    if(el){ play(el); return; }
+    var t = e.target.closest(".tt-facade");
+    if(t) playTT(t);
   });
   document.addEventListener("keydown", function(e){
     if(e.key !== "Enter" && e.key !== " ") return;
